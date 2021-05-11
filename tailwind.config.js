@@ -11,6 +11,9 @@ module.exports = {
             fontFamily: {
                 sans: ["firago"],
             },
+            width: {
+                44: "44%",
+            },
         },
     },
     variants: {},

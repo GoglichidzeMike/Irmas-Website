@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn {
+    @apply px-8 py-3 text-sm rounded-lg  focus:outline-none focus:ring-2 focus:ring-secondary hover:bg-secondary transition duration-300 ease-out focus:border-opacity-0 border border-primary hover:border-opacity-0 hover:shadow-lg;
+}
+
 @font-face {
     font-family: "firago";
     font-weight: 400;
