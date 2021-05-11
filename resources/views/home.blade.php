@@ -53,18 +53,17 @@
 </div>
 
 <div class="w-full bg-gray-100 pb-20">
-
   <div class="w-8/12 mx-auto flex justify-between">
     <div class="w-4/12 -mt-20">
       <img src="/image/irma-second.jpg" alt="Irma" class="rounded-lg shadow-md">
     </div>
     
     <div class="w-7/12">
-      <h2 class="text-3xl text-dark font-medium my-10">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <h2 class="text-3xl text-dark font-medium my-6">ჩემი <span class="text-secondary">სერვისები</span></h2>
       <p class="w-11/12 text-third mb-6">
         შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
-      <div class="cards flex flex-col gap-8">
+      <div class="card-container flex flex-col gap-6">
         <div class="card">
           <img src="/image/head-2.svg" alt="Brain Illustration" class="w-24 ml-4 h-auto">
           <div class="div">
@@ -95,13 +94,41 @@
         </div>
       </div>
       <div class="mt-6">
-
         <a href="/about" class="btn bg-primary text-white">ჩვენთან დაკავშირება</a>
       </div>
     </div>
-  </div>
-  
+  </div>  
 </div>
 
+@if($latest->count())
+<div class="w-full bg-primary">
+  <div class="w-8/12 mx-auto pt-14 pb-40">
+    <h2 class="text-3xl text-white text-center font-medium">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
+  </div>
 
-@endsection
+</div>
+<div class="w-full">
+  <div class="w-8/12 mx-auto -mt-32 latest grid grid-cols-3 gap-4">
+
+    @foreach ($latest as $blog)
+    <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease ">
+      <div class="mb-6">
+        <img src="/uploads/image/{{ $blog->image }}" class="mb-3 rounded-lg shadow-md" alt="{{ $blog->name }}">
+        <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
+      </div>
+      
+      <div class="flex justify-between items-center">
+        <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary">სრულად ნახვა</a>
+        <p class="text-third text-xs">  {{   $blog->created_at->toFormattedDateString() }}</p>
+      </div>
+    </div>    
+    @endforeach
+
+  </div>
+</div>
+@else
+<p>There are no blogs</p>    
+@endif
+
+  
+ @endsection

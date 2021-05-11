@@ -32600,6 +32600,7 @@ video {
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
   border-radius: 0.75rem;
   display: flex;
+  align-items: center;
   padding: 0.5rem;
 }
 

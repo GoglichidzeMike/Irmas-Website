@@ -22,7 +22,7 @@
           <a href="{{ route('events') }}" class="p-3">Events</a>
         </li>
         <li>
-          <a href="{{ route('contact') }}" class="p-3">Contact</a>
+          {{-- <a href="{{ route('contact') }}" class="p-3">Contact</a> --}}
         </li>
       </ul>
 
