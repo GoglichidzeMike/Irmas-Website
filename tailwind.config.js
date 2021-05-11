@@ -7,6 +7,7 @@ module.exports = {
                 primary: "#105650",
                 secondary: "#55C187",
                 dark: "#1F1F1F",
+                third: "#6C9593",
             },
             fontFamily: {
                 sans: ["firago"],

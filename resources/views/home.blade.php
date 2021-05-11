@@ -22,7 +22,7 @@
     </div>
   </div>
 </div>
-<div class="w-full bg-primary py-20 mb-10">
+<div class="w-full bg-primary py-20">
   <div class="w-8/12 m-auto flex items-center">
     <h2 class="text-3xl text-white w-8/12">
       მე შემიძლია <span class="text-secondary">თერაპიაში</span> და შემდეგ <span class="text-secondary">საკითხებში</span> დაგეხმარო
@@ -51,5 +51,57 @@
     </div>
   </div>
 </div>
+
+<div class="w-full bg-gray-100 pb-20">
+
+  <div class="w-8/12 mx-auto flex justify-between">
+    <div class="w-4/12 -mt-20">
+      <img src="/image/irma-second.jpg" alt="Irma" class="rounded-lg shadow-md">
+    </div>
+    
+    <div class="w-7/12">
+      <h2 class="text-3xl text-dark font-medium my-10">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <p class="w-11/12 text-third mb-6">
+        შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
+      </p>
+      <div class="cards flex flex-col gap-8">
+        <div class="card">
+          <img src="/image/head-2.svg" alt="Brain Illustration" class="w-24 ml-4 h-auto">
+          <div class="div">
+            <p class="text-primary font-medium text-md mb-4">ფსიქოთერაფია & ფსიქოლოგია</p>
+            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/brain-1.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <div class="div">
+            <p class="text-primary font-medium text-md mb-4">ფსიქოგანათლება</p>
+            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/head-1.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <div class="div">
+            <p class="text-primary font-medium text-md mb-4">ფიზიკური რაღაცა</p>
+            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/brain-2.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <div class="div">
+            <p class="text-primary font-medium text-md mb-4">სავარძელზე წამოწოლა</p>
+            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6">
+
+        <a href="/about" class="btn bg-primary text-white">ჩვენთან დაკავშირება</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
 
 @endsection

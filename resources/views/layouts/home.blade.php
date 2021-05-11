@@ -39,7 +39,7 @@
       @yield('content')
 
 
-    <footer class="mt-auto bg-primary w-full">
+    <footer class="mt-32 bg-primary w-full">
       <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
         <ul class="flex text-sm align-center gap-2">
           <li>
