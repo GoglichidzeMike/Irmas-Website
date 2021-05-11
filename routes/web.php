@@ -6,19 +6,16 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LeadController;
 use Illuminate\Support\Facades\Route;
 
 
 //some public routes
-Route::get('/', function(){
-    return view('home');
-})->name('home');
+
+Route::get('/', [HomeController::class,'index'])->name('home');
 
 
-Route::get('/contact', function(){
-    return view('contact.index');
-})->name('contact');
 
 
 

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "firago";
+    font-weight: 400;
+    src: local("Firago"), url(../fonts/firago-regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "firago";
+    font-weight: 300;
+    src: local("Firago"), url(../fonts/firago-light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "firago";
+    font-weight: 500;
+    src: local("Firago"), url(../fonts/firago-medium.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "firago";
+    font-weight: 700;
+    src: local("Firago"), url(../fonts/firago-bold.woff2) format("woff2");
+}
