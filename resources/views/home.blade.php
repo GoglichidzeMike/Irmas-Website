@@ -107,7 +107,7 @@
   </div>
 
 </div>
-<div class="w-full">
+<div class="w-full mb-10">
   <div class="w-8/12 mx-auto -mt-32 latest grid grid-cols-3 gap-4">
 
     @foreach ($latest as $blog)
@@ -129,6 +129,80 @@
 @else
 <p>There are no blogs</p>    
 @endif
+
+<div class="partners bg-gray-100 relative">
+  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0">
+  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0">
+  <div class="w-8/12 mx-auto text-center mt-20 mb-28">
+    <h2 class="text-primary text-3xl font-medium">პარტნიორები</h2>
+    <p class="text-secondary mb-8">პარტნიორების ტექსტი, შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br/> და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
+    <div class="flex flex-wrap gap-8">
+      <div class="partner">
+        <img src="/image/google.svg" alt="Google Logo" class="mb-4">
+        <p class="text-primary">დასახელება მეორე</p>
+      </div>
+      <div class="partner">
+        <img src="/image/snapchat.svg" alt="Google Logo" class="mb-4">
+        <p class="text-primary">პარტნიორი მეორე</p>
+      </div>
+      <div class="partner">
+        <img src="/image/tiktok.svg" alt="Google Logo" class="mb-4">
+        <p class="text-primary">ფიგმუნდ ზროიდი</p>
+      </div>
+      <div class="partner">
+        <img src="/image/youtube.svg" alt="Google Logo" class="mb-4">
+        <p class="text-primary">ფსიქოლოგია</p>
+      </div>
+      <div class="partner">
+        <img src="/image/snapchat-alt.svg" alt="Google Logo" class="mb-4">
+        <p class="text-primary">მოკლე</p>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div class="w-full py-20" id="contact">
+  <h3 class="text-3xl font-medium text-primary text-center mb-4">დაგვიკავშირდით</h3>
+  <p class="text-secondary text-center">აქედან შეგიძლიათ ჩვენთან დაკავშირება თუ გსურთ ჩაწერა</p>
+  <p class="text-secondary text-center">რაღაცა ან უბრალოდ გასაუბრება</p>
+  <div class="w-8/12 mx-auto rounded-lg shadow-xl px-4 py-6 flex justify-center">
+    <div class="w-3/12 pl-6 pr-3 flex flex-col justify-center">
+      <p class="text-primary font-primary font-medium text-center">კონტაქტის ფორმები</p>
+      <div class="flex my-3">
+        <img src="/image/contact/smartphone.svg" alt="Smartphone Icon" class="w-6">
+        <p class="text-primary ml-4">+995 579 900 900</p>
+      </div>
+      <div class="flex my-3">
+        <img src="/image/contact/mail.svg" alt="Smartphone Icon" class="w-6">
+        <p class="text-primary ml-4">irma@irmaswebsite.ge</p>
+      </div>
+      <div class="flex my-3">
+        <img src="/image/contact/contact_fb.svg" alt="Smartphone Icon" class="w-6">
+        <p class="text-primary ml-4">fb.me/irmasfb</p>
+      </div>
+      <div class="flex my-3">
+        <img src="/image/contact/contact_link.svg" alt="Smartphone Icon" class="w-6">
+        <p class="text-primary ml-4">linked.in/irmapsy</p>
+      </div>
+    </div>
+    <form action="" class="w-9/12 flex gap-x-10">
+      <div class="w-1/2">
+        <label for="name" class="text-primary block font-light mb-1">სახელი</label>
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="თქვენი სახელი" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
+        <label for="email" class="text-primary block font-light mb-1">მეილი</label>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="თქვენი e-mail" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
+        <label for="phone" class="text-primary block font-light mb-1">სახელი</label>
+        <input type="text" name="phone" id="phone" autocomplete="off" placeholder="თქვენი ტელეფონის ნომერი" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
+      </div>
+      <div class="w-1/2">
+        <label for="message" class="text-primary block font-light mb-1">შეტყობინება</label>
+        <textarea name="message" id="message" rows="6" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out"></textarea>
+        <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out">გაგზავნა</button>
+      </div>
+    </form>
+  </div>
+
+</div>
 
   
  @endsection

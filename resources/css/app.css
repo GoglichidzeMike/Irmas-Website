@@ -10,6 +10,10 @@
     @apply flex items-center gap-10 w-11/12 p-2 transform hover:-translate-y-6 bg-gray-100 hover:shadow-xl rounded-xl transition duration-500 ease-in-out;
 }
 
+.partner {
+    @apply flex flex-col items-center justify-center bg-white rounded-lg shadow-md w-56 py-8 hover:shadow-xl transition-shadow duration-300 ease-in-out z-10;
+}
+
 @font-face {
     font-family: "firago";
     font-weight: 400;
