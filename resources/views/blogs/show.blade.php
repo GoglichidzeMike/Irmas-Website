@@ -21,7 +21,7 @@
     </div>
     <div class="w-3/12 flex flex-col gap-2">
       <div class="">
-        <p class="mb-2 text-primary font-medium text-lg text-center mt-4">ბოლოს დამატებული</p>
+        <p class="mb-2 text-primary font-medium text-lg text-center mt-4 uppercase tracking-widest">ბოლოს დამატებული</p>
         <div class="h-px w-full bg-primary mx-auto bg-opacity-60"></div>
       </div>
       @if($latest->count())

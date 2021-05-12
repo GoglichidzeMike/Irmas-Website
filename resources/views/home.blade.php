@@ -34,19 +34,19 @@
   </div>
   <div class="mx-auto w-8/12 flex justify-between my-10">
     <div class="flex flex-col w-72">
-      <p class="text-gray-100 mb-2 font-medium">შფოთვა</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">შფოთვა</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
     </div>
     <div class="flex flex-col w-72">
-      <p class="text-gray-100 mb-2 font-medium">ფობია მეორე</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">ფობია მეორე</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული</p>
     </div>
     <div class="flex flex-col w-72">
-      <p class="text-gray-100 mb-2 font-medium">დამოკიდებულება</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დამოკიდებულება</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის</p>
     </div>
     <div class="flex flex-col w-72">
-      <p class="text-gray-100 mb-2 font-medium">დეპრესია</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დეპრესია</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება</p>
     </div>
   </div>

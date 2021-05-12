@@ -4,7 +4,7 @@
     
 <div class="w-full">
   <div class="bg-blogs-index shadow-lg py-28">
-    <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl">ჩვენი სტატიები და სიახლეები</h2>
+    <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი სტატიები და სიახლეები</h2>
     <p class="text-center text-secondary filter drop-shadow-xl">აქ არის ჩვენი სიახლეები, სტატიები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
   </div>
   <div class="w-8/12 mx-auto flex justify-between gap-6 -mt-20">
@@ -17,7 +17,7 @@
             <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
           </div>
           <div class="flex justify-between items-center">
-            <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary">სრულად ნახვა</a>
+            <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary uppercase">სრულად ნახვა</a>
             <p class="text-third text-xs">  {{   $blog->created_at->toFormattedDateString() }}</p>
           </div>
         </div>
