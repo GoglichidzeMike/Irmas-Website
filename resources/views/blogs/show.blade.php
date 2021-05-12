@@ -5,7 +5,7 @@
 <div class="w-full">
   <div class="w-full bg-primary pt-20 pb-32">
     <div class="w-6/12 mx-auto">
-      <h2 class="text-3xl mb-1 text-center text-white">{{ $blog->name }}</h2>
+      <h2 class="text-3xl mb-1 font-medium filter drop-shadow-lg text-center text-white uppercase">{{ $blog->name }}</h2>
       <p class="text-third text-center mb-4 text-sm">  {{   $blog->created_at->toFormattedDateString() }}</p>
     </div>
   </div>

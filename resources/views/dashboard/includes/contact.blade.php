@@ -1,5 +1,5 @@
 <div class="w-full py-20" id="contact">
-  <h3 class="text-3xl font-medium text-primary text-center mb-4">დაგვიკავშირდით</h3>
+  <h3 class="text-3xl font-medium text-primary text-center mb-4 uppercase">დაგვიკავშირდით</h3>
   <p class="text-secondary text-center">აქედან შეგიძლიათ ჩვენთან დაკავშირება თუ გსურთ ჩაწერა</p>
   <p class="text-secondary text-center">რაღაცა ან უბრალოდ გასაუბრება</p>
       @if (session('status'))
@@ -40,7 +40,7 @@
       <div class="w-1/2">
         <label for="message" class="text-primary block font-light mb-1">შეტყობინება</label>
         <textarea name="message" id="message" rows="6" class="input" value="{{ old('message') }}" @error('message') border-red-500 @enderror></textarea>
-        <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out">გაგზავნა</button>
+        <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out uppercase">გაგზავნა</button>
       </div>
     </form>
   </div>

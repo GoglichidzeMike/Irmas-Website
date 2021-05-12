@@ -18,16 +18,16 @@
         </a>
       <ul class="flex items-center text-primary gap-4">
         <li>
-          <a href="{{ route('home') }}" class="py-3">მთავარი</a>
+          <a href="{{ route('home') }}" class="py-3 uppercase">მთავარი</a>
         </li>
         <li>
-          <a href="{{ route('blogs') }}" class="py-3">სტატიები</a>
+          <a href="{{ route('blogs') }}" class="py-3 uppercase">სტატიები</a>
         </li>
         <li>
-          <a href="{{ route('events') }}" class="py-3">ივენთები</a>
+          <a href="{{ route('events') }}" class="py-3 uppercase">ივენთები</a>
         </li>
         <li>
-          <a href="/about" class="py-3">ჩემს შესახებ</a>  
+          <a href="/about" class="py-3 uppercase">ჩემს შესახებ</a>  
           {{-- TODO: change to route when available --}}
         </li>
       </ul>

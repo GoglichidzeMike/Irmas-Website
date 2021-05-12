@@ -6,7 +6,7 @@
 <div class="w-full z-10">
   <div class="w-8/12 flex justify-between mx-auto">
     <div class="flex flex-col justify-center w-7/12 pr-8">
-      <h1 class="text-4xl text-primary font-medium mt-6">მთავარი სათაური <span class="text-secondary">იქნება</span> აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
+      <h1 class="text-4xl text-primary font-medium mt-6 uppercase">მთავარი სათაური <span class="text-secondary">იქნება</span> სიტყვა აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
       
       <p class="text-primary my-14">
         შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
@@ -24,7 +24,7 @@
 </div>
 <div class="w-full bg-primary py-20">
   <div class="w-8/12 m-auto flex items-center">
-    <h2 class="text-3xl text-white w-8/12">
+    <h2 class="text-3xl text-white w-8/12 uppercase">
       მე შემიძლია <span class="text-secondary">თერაპიაში</span> და შემდეგ <span class="text-secondary">საკითხებში</span> დაგეხმარო
       და ეს მხოლოდ <span class="text-secondary">ზოგიერთი რამეა</span> რაშიც შეგვიძლია მუშაობა.
     </h2>
@@ -59,7 +59,7 @@
     </div>
     
     <div class="w-7/12">
-      <h2 class="text-3xl text-dark font-medium my-6">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <h2 class="text-3xl text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
       <p class="w-11/12 text-third mb-6">
         შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
@@ -103,7 +103,7 @@
 @if($latest->count())
 <div class="w-full bg-primary">
   <div class="w-8/12 mx-auto pt-14 pb-40">
-    <h2 class="text-3xl text-white text-center font-medium">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
+    <h2 class="text-3xl text-white text-center font-medium uppercase">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
   </div>
 
 </div>
@@ -118,7 +118,7 @@
       </div>
       
       <div class="flex justify-between items-center">
-        <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary">სრულად ნახვა</a>
+        <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary uppercase">სრულად ნახვა</a>
         <p class="text-third text-xs">  {{   $blog->created_at->toFormattedDateString() }}</p>
       </div>
     </div>    
@@ -134,7 +134,7 @@
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0">
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0">
   <div class="w-8/12 mx-auto text-center mt-20 mb-28">
-    <h2 class="text-primary text-3xl font-medium">პარტნიორები</h2>
+    <h2 class="text-primary text-3xl font-medium uppercase mb-2">პარტნიორები</h2>
     <p class="text-secondary mb-8">პარტნიორების ტექსტი, შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br/> და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
     <div class="flex flex-wrap gap-8">
       <div class="partner">
