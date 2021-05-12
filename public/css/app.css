@@ -4353,6 +4353,10 @@ video {
   background-image: url('/image/blogs-bg.svg');
 }
 
+.bg-events-index {
+  background-image: url('/image/events-bg.svg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -36621,6 +36625,10 @@ video {
     background-image: url('/image/blogs-bg.svg');
   }
 
+  .sm\:bg-events-index {
+    background-image: url('/image/events-bg.svg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -68438,6 +68446,10 @@ video {
 
   .md\:bg-blogs-index {
     background-image: url('/image/blogs-bg.svg');
+  }
+
+  .md\:bg-events-index {
+    background-image: url('/image/events-bg.svg');
   }
 
   .md\:from-transparent {
@@ -100259,6 +100271,10 @@ video {
     background-image: url('/image/blogs-bg.svg');
   }
 
+  .lg\:bg-events-index {
+    background-image: url('/image/events-bg.svg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -132078,6 +132094,10 @@ video {
     background-image: url('/image/blogs-bg.svg');
   }
 
+  .xl\:bg-events-index {
+    background-image: url('/image/events-bg.svg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -163895,6 +163915,10 @@ video {
 
   .\32xl\:bg-blogs-index {
     background-image: url('/image/blogs-bg.svg');
+  }
+
+  .\32xl\:bg-events-index {
+    background-image: url('/image/events-bg.svg');
   }
 
   .\32xl\:from-transparent {

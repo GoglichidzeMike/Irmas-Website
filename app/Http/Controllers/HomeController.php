@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -33,5 +34,28 @@ class HomeController extends Controller
             'latest'=>$latest
         ]);
     }
+
+
+
+    public function events_index()
+   {
+        $events = Event::orderBy('created_at', 'desc')->paginate(10); 
+        return view('events.index', [ 
+            'events' => $events
+        ]);
+   }
+   
+
+
+    public function events_show($slug)
+    {
+        $event = Event::where('slug', '=', $slug)->firstOrFail();
+        $latest = Event::orderBy('created_at', 'desc')->take(3)->get(); 
+        return view('events.show',[
+            'event' => $event,
+            'latest' => $latest
+        ]);
+    }
+
 
 }

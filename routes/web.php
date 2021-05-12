@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 //some public routes
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+
 Route::get('/blogs', [HomeController::class,'blogs_index'])->name('blogs');    
 Route::get('/blogs/{slug}', [HomeController::class,'blogs_show'])->name('public_blogs.show');
 
+Route::get('/events', [HomeController::class,'events_index'])->name('events');    // TODO: need to move this to public-blogs
+Route::get('/events/{slug}', [HomeController::class,'events_show'])->name('public_event.show'); // TODO: need to move this to public-blogs
 
 
 //dashboard route
@@ -36,16 +39,14 @@ Route::post('/blogs', [BlogsController::class,'store']);
 
 //event controllers
 
-Route::get('/dashboard/event', [EventController::class,'index_dashboard'])->name('event.dashboard')->middleware('auth');
-Route::get('/dashboard/event/create', [EventController::class,'create'])->name('event.create')->middleware('auth');
-Route::get('/dashboard/event/{slug}', [EventController::class,'show'])->name('event.show')->middleware('auth');
-Route::get('/dashboard/event/edit/{id}', [EventController::class,'edit'])->name('event.edit')->middleware('auth');
-Route::post('/dashboard/event/update/{id}', [EventController::class,'update'])->name('event.update')->middleware('auth');
-Route::post('/dashboard/event/{id}', [EventController::class,'destroy'])->name('event.destroy')->middleware('auth');
-Route::post('/dashboard/event/upload', [EventController::class,'image_upload'])->middleware('auth');
+Route::get('/dashboard/event', [EventController::class,'index_dashboard'])->name('event.dashboard');
+Route::get('/dashboard/event/create', [EventController::class,'create'])->name('event.create');
+Route::get('/dashboard/event/{slug}', [EventController::class,'show'])->name('event.show');
+Route::get('/dashboard/event/edit/{id}', [EventController::class,'edit'])->name('event.edit');
+Route::post('/dashboard/event/update/{id}', [EventController::class,'update'])->name('event.update');
+Route::post('/dashboard/event/{id}', [EventController::class,'destroy'])->name('event.destroy');
+Route::post('/dashboard/event/upload', [EventController::class,'image_upload']);
 
-Route::get('/events', [EventController::class,'index'])->name('events');    // TODO: need to move this to public-blogs
-Route::get('/events/{slug}', [EventController::class,'public_show'])->name('public_event.show'); // TODO: need to move this to public-blogs
 Route::post('/events', [EventController::class,'store'])->middleware('auth');
 
 

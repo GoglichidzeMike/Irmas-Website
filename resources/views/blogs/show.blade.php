@@ -12,7 +12,7 @@
   <div class="w-8/12 mx-auto flex justify-between gap-8">
     <div class="w-9/12">
       <img src="/uploads/image/{{ $blog->image }}" class="max-w-lg bg-white p-1 -mt-32 mx-auto" alt="{{ $blog->name }}">
-      <div class="my-3">
+      <div class="my-4 text-darker">
         {!! $blog->body !!}
       </div>
       <div class="flex flex-col mt-3">

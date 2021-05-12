@@ -3,7 +3,7 @@
 @section('content')
     
 <div class="w-full">
-  <div class="bg-blogs-index shadow-lg py-28">
+  <div class="bg-blogs-index bg-cover shadow-lg py-28">
     <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი სტატიები და სიახლეები</h2>
     <p class="text-center text-secondary filter drop-shadow-xl">აქ არის ჩვენი სიახლეები, სტატიები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
   </div>
