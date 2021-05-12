@@ -1,37 +1,32 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
     
-<div class="flex justify-center">
-  <div class="w-8/12 bg-white p-6 my-6 rounded-lg">
-
-
+<div class="w-full">
+  <div class="bg-blogs-index shadow-lg py-28">
+    <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl">ჩვენი სტატიები და სიახლეები</h2>
+    <p class="text-center text-secondary filter drop-shadow-xl">აქ არის ჩვენი სიახლეები, სტატიები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
+  </div>
+  <div class="w-8/12 mx-auto flex justify-between gap-6 -mt-20">
     <div class="grid grid-cols-3 gap-4">
       @if($blogs->count())
       @foreach ($blogs as $blog)
-      <div class="mb-4 p-3 border-2 flex flex-col justify-between">
-        <img src="/uploads/image/{{ $blog->image }}" class="mb-3" alt="{{ $blog->name }}">
-        <a class="font-bold" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
-
-        <div class="flex flex-col mt-3">
-         <p>{{ $blog->user->name }}</p>
-          <span class="text-gray-600 text-sm">  {{   $blog->created_at->toFormattedDateString() }}</span>
+        <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:shadow-xl transition-shadow duration-300 ease-out">
+          <div class="mb-6">
+            <img src="/uploads/image/{{ $blog->image }}" class="mb-3 rounded-lg shadow-md" alt="{{ $blog->name }}">
+            <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
+          </div>
+          <div class="flex justify-between items-center">
+            <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary">სრულად ნახვა</a>
+            <p class="text-third text-xs">  {{   $blog->created_at->toFormattedDateString() }}</p>
+          </div>
         </div>
-        {{-- <div class="my-3">
-          {!! $blog->body !!}
-        </div> --}}
-      </div>    
-      
       @endforeach
-      
       {{ $blogs->links() }}
-      
       @else
-      <p>There are no blogs</p>    
+        <p>There are no blogs</p>    
       @endif
     </div>
-
-
   </div>
 </div>
 

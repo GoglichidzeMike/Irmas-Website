@@ -3,6 +3,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            backgroundImage: (theme) => ({
+                "blogs-index": "url('/image/blogs-bg.svg')",
+            }),
             colors: {
                 primary: "#105650",
                 secondary: "#55C187",
