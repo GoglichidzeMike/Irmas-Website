@@ -18,9 +18,10 @@ Route::get('/', [HomeController::class,'index'])->name('home');
 Route::get('/blogs', [HomeController::class,'blogs_index'])->name('blogs');    
 Route::get('/blogs/{slug}', [HomeController::class,'blogs_show'])->name('public_blogs.show');
 
-Route::get('/events', [HomeController::class,'events_index'])->name('events');    // TODO: need to move this to public-blogs
-Route::get('/events/{slug}', [HomeController::class,'events_show'])->name('public_event.show'); // TODO: need to move this to public-blogs
+Route::get('/events', [HomeController::class,'events_index'])->name('events');
+Route::get('/events/{slug}', [HomeController::class,'events_show'])->name('public_event.show'); 
 
+Route::get('/about', [HomeController::class,'about'])->name('about');
 
 //dashboard route
 Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');

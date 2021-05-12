@@ -14,7 +14,7 @@
       
       <div>
         <a href="#contact" class="btn bg-primary text-white mr-6">კონტაქტი</a>
-        <a href="/about-me" class="btn hover:text-white text-primary">ჩვენს შესახებ</a>
+        <a href="{{ route('about') }}" class="btn hover:text-white text-primary">ჩვენს შესახებ</a>
       </div>
     </div>
     <div class="w-5/12">

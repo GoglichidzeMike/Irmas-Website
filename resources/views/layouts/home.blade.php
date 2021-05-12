@@ -27,8 +27,7 @@
           <a href="{{ route('events') }}" class="nav-link">ივენთები</a>
         </li>
         <li>
-          <a href="/about" class="nav-link">ჩემს შესახებ</a>  
-          {{-- TODO: change to route when available --}}
+          <a href="{{ route('about') }}" class="nav-link">ჩემს შესახებ</a>  
         </li>
       </ul>
         <a href="#contact" class="bg-secondary py-2 px-8 shadow-md text-white rounded-xl hover:bg-primary hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">კონტაქტი</a>
@@ -55,8 +54,7 @@
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50"></div>
           <li>
-            <a href="/about" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
-            {{-- TODO: change to route when available --}}
+            <a href="{{ route('about') }}" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
           </li>
         </ul>
         <p class="text-sm">Dev By - <a href="https://goglichidze.me" target="_blank" class="hover:text-secondary transition duration-300 ease-out"> Mikael</a></p>
