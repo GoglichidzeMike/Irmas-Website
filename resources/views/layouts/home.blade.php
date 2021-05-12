@@ -18,16 +18,16 @@
         </a>
       <ul class="flex items-center text-primary gap-4">
         <li>
-          <a href="{{ route('home') }}" class="py-3 uppercase">მთავარი</a>
+          <a href="{{ route('home') }}" class="nav-link">მთავარი</a>
         </li>
         <li>
-          <a href="{{ route('blogs') }}" class="py-3 uppercase">სტატიები</a>
+          <a href="{{ route('blogs') }}" class="nav-link">სტატიები</a>
         </li>
         <li>
-          <a href="{{ route('events') }}" class="py-3 uppercase">ივენთები</a>
+          <a href="{{ route('events') }}" class="nav-link">ივენთები</a>
         </li>
         <li>
-          <a href="/about" class="py-3 uppercase">ჩემს შესახებ</a>  
+          <a href="/about" class="nav-link">ჩემს შესახებ</a>  
           {{-- TODO: change to route when available --}}
         </li>
       </ul>
@@ -43,19 +43,19 @@
       <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
         <ul class="flex text-sm align-center gap-2">
           <li>
-            <a href="{{ route('home') }}" class="py-3 hover:text-secondary transition duration-300 ease-out">მთავარი</a>
+            <a href="{{ route('home') }}" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">მთავარი</a>
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50"></div>
           <li>
-            <a href="{{ route('blogs') }}" class="py-3 hover:text-secondary transition duration-300 ease-out">სტატიები</a>
+            <a href="{{ route('blogs') }}" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">სტატიები</a>
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50"></div>
           <li>
-            <a href="{{ route('events') }}" class="py-3 hover:text-secondary transition duration-300 ease-out">ივენთები</a>
+            <a href="{{ route('events') }}" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">ივენთები</a>
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50"></div>
           <li>
-            <a href="/about" class="py-3 hover:text-secondary transition duration-300 ease-out">ჩემს შესახებ</a>  
+            <a href="/about" class="py-3 hover:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
             {{-- TODO: change to route when available --}}
           </li>
         </ul>

@@ -32719,8 +32719,71 @@ video {
   transition-duration: 300ms;
 }
 
+.nav-link {
+  padding-bottom: 0.25rem;
+  padding-top: 0.75rem;
+}
+
+.nav-link:hover {
+  --tw-text-opacity: 1;
+  color: rgba(85, 193, 135, var(--tw-text-opacity));
+}
+
+.nav-link {
+  text-transform: uppercase;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-feature-settings: "case" on;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #55c187;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
 .uppercase {
   font-feature-settings: "case" on;
+}
+
+.animated {
+  position: relative;
+}
+
+.animated::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #55c187;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .animated:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 @font-face {
