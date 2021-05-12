@@ -54,7 +54,7 @@ Route::post('/events', [EventController::class,'store'])->middleware('auth');
 
 // contact controllers
 Route::get('/dashboard/leads', [LeadController::class, 'index'])->name('lead.dashboard')->middleware('auth');
-Route::post('/contact', [LeadController::class,'store']);
+Route::post('/contact', [LeadController::class,'store'])->name('contact');
 Route::post('/contact/leads/{id}', [LeadController::class, 'destroy'])->name('lead.destroy')->middleware('auth');
 Route::get('/leads/export', [LeadController::class, 'exportCsv'])->name('lead.export')->middleware('auth');
 Route::get('/leads/{id}', [LeadController::class, 'show'])->name('lead.show')->middleware('auth');

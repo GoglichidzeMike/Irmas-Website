@@ -107,11 +107,11 @@
   </div>
 
 </div>
-<div class="w-full mb-10">
+<div class="w-full mb-32">
   <div class="w-8/12 mx-auto -mt-32 latest grid grid-cols-3 gap-4">
 
     @foreach ($latest as $blog)
-    <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease ">
+    <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
       <div class="mb-6">
         <img src="/uploads/image/{{ $blog->image }}" class="mb-3 rounded-lg shadow-md" alt="{{ $blog->name }}">
         <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
@@ -161,48 +161,8 @@
   </div>  
 </div>
 
-<div class="w-full py-20" id="contact">
-  <h3 class="text-3xl font-medium text-primary text-center mb-4">დაგვიკავშირდით</h3>
-  <p class="text-secondary text-center">აქედან შეგიძლიათ ჩვენთან დაკავშირება თუ გსურთ ჩაწერა</p>
-  <p class="text-secondary text-center">რაღაცა ან უბრალოდ გასაუბრება</p>
-  <div class="w-8/12 mx-auto rounded-lg shadow-xl px-4 py-6 flex justify-center">
-    <div class="w-3/12 pl-6 pr-3 flex flex-col justify-center">
-      <p class="text-primary font-primary font-medium text-center">კონტაქტის ფორმები</p>
-      <div class="flex my-3">
-        <img src="/image/contact/smartphone.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">+995 579 900 900</p>
-      </div>
-      <div class="flex my-3">
-        <img src="/image/contact/mail.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">irma@irmaswebsite.ge</p>
-      </div>
-      <div class="flex my-3">
-        <img src="/image/contact/contact_fb.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">fb.me/irmasfb</p>
-      </div>
-      <div class="flex my-3">
-        <img src="/image/contact/contact_link.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">linked.in/irmapsy</p>
-      </div>
-    </div>
-    <form action="" class="w-9/12 flex gap-x-10">
-      <div class="w-1/2">
-        <label for="name" class="text-primary block font-light mb-1">სახელი</label>
-        <input type="text" name="name" id="name" autocomplete="off" placeholder="თქვენი სახელი" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
-        <label for="email" class="text-primary block font-light mb-1">მეილი</label>
-        <input type="email" name="email" id="email" autocomplete="off" placeholder="თქვენი e-mail" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
-        <label for="phone" class="text-primary block font-light mb-1">სახელი</label>
-        <input type="text" name="phone" id="phone" autocomplete="off" placeholder="თქვენი ტელეფონის ნომერი" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out">
-      </div>
-      <div class="w-1/2">
-        <label for="message" class="text-primary block font-light mb-1">შეტყობინება</label>
-        <textarea name="message" id="message" rows="6" class="w-full mb-2 text-sm ring-1 ring-primary p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-400 ease-in-out"></textarea>
-        <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out">გაგზავნა</button>
-      </div>
-    </form>
-  </div>
-
+<div class="contact-container">
+  @include('dashboard.includes.contact')
 </div>
-
   
- @endsection
+@endsection
