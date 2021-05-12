@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="mt-6">
-        <a href="/about" class="btn bg-primary text-white">ჩვენთან დაკავშირება</a>
+        <a href="/about" class="btn bg-primary text-white">მეტი ირმას შესახებ</a>
       </div>
     </div>
   </div>  

@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 //some public routes
 
 Route::get('/', [HomeController::class,'index'])->name('home');
-
-
+Route::get('/blogs', [HomeController::class,'blogs_index'])->name('blogs');    
+Route::get('/blogs/{slug}', [HomeController::class,'blogs_show'])->name('public_blogs.show');
 
 
 
@@ -24,17 +24,14 @@ Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard'
 
 
 //blogs route
-Route::get('/dashboard/blogs', [BlogsController::class,'index_dashboard'])->name('blog.dashboard')->middleware('auth');
-Route::get('/dashboard/blogs/create', [BlogsController::class,'create'])->name('blog.create')->middleware('auth');
-Route::get('/dashboard/blogs/{slug}', [BlogsController::class,'show'])->name('blog.show')->middleware('auth');
-Route::get('/dashboard/blogs/edit/{id}', [BlogsController::class,'edit'])->name('blog.edit')->middleware('auth');
-Route::post('/dashboard/blogs/update/{id}', [BlogsController::class,'update'])->name('blog.update')->middleware('auth');
-Route::post('/dashboard/blogs/{id}', [BlogsController::class,'destroy'])->name('blog.destroy')->middleware('auth');
-Route::post('/dashboard/blog/upload', [BlogsController::class,'image_upload'])->middleware('auth');
-
-Route::get('/blogs', [BlogsController::class,'index'])->name('blogs');    // TODO: need to move this to public-blogs
-Route::get('/blogs/{slug}', [BlogsController::class,'public_show'])->name('public_blogs.show'); // TODO: need to move this to public-blogs
-Route::post('/blogs', [BlogsController::class,'store'])->middleware('auth');
+Route::get('/dashboard/blogs', [BlogsController::class,'index_dashboard'])->name('blog.dashboard');
+Route::get('/dashboard/blogs/create', [BlogsController::class,'create'])->name('blog.create');
+Route::get('/dashboard/blogs/{slug}', [BlogsController::class,'show'])->name('blog.show');
+Route::get('/dashboard/blogs/edit/{id}', [BlogsController::class,'edit'])->name('blog.edit');
+Route::post('/dashboard/blogs/update/{id}', [BlogsController::class,'update'])->name('blog.update');
+Route::post('/dashboard/blogs/{id}', [BlogsController::class,'destroy'])->name('blog.destroy');
+Route::post('/dashboard/blog/upload', [BlogsController::class,'image_upload']);
+Route::post('/blogs', [BlogsController::class,'store']);
 
 
 //event controllers

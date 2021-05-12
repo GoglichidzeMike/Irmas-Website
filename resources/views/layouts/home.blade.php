@@ -12,10 +12,10 @@
   <div class="w-full z-10">
     <div class="py-4  w-8/12  mx-auto flex justify-between items-center">
 
-      <div class="flex items-center">
-        <img src="/image/logo.png" class="w-10" alt="Irmas Logo">  
-        <p class="font-medium text-secondary ml-1">Psychology</p>
-      </div>
+        <a class="flex items-center" href="{{ route('home') }}">
+          <img src="/image/logo.png" class="w-10" alt="Irmas Logo">  
+          <p class="font-medium text-secondary ml-1">Psychology</p>
+        </a>
       <ul class="flex items-center text-primary gap-4">
         <li>
           <a href="{{ route('home') }}" class="py-3">მთავარი</a>
