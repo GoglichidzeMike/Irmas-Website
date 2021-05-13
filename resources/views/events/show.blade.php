@@ -16,17 +16,17 @@
       <img src="/uploads/image/{{ $event->image }}" class="max-w-lg bg-white p-1 -mt-32 mx-auto" alt="{{ $event->name }}">
       <div class="">
         @if($event->date || $event->duration)
-            <div class="flex justify-center gap-10 shadow-inner p-2 mx-auto my-6 rounded-md bottom-2 bg-primary">
+            <div class="flex justify-centermx-auto my-6 shadow-lg">
               @if ($event->date)
-                <div class="flex">
-                  <p class="text-gray-100  text-center mr-2">დასაწყისი: </p> 
-                  <p class="font-medium text-white text-center"> {{ $event->date }}</p>
+                <div class="flex border border-primary w-1/2 justify-center uppercase p-2 border-r-0">
+                  <p class="text-primary  text-center mr-2 drop-shadow">დასაწყისი: </p> 
+                  <p class="font-medium text-primary text-center drop-shadow"> {{ $event->date }}</p>
                 </div>
               @endif
               @if ($event->duration)
-                <div class="flex">
-                  <p class="text-gray-100 text-center mr-2">ხანგრძლივობა: </p>
-                  <p class="font-medium text-white text-center"> {{ $event->duration }}</p>
+                <div class="flex border border-primary w-1/2 justify-center uppercase p-2">
+                  <p class="text-primary text-center mr-2 drop-shadow-md">ხანგრძლივობა: </p>
+                  <p class="font-medium text-primary text-center drop-shadow-md"> {{ $event->duration }}</p>
                 </div>
               @endif
             </div>
@@ -35,8 +35,14 @@
           {!! $event->body !!}
         </div>
 
-         <div class="my-10">
+        <div class="my-10">
           @include('dashboard.includes.register')
+        </div>
+
+
+        <div class="w-full flex my-10">
+          <a href="{{ route('home') }}" class="show-btn">მთავარ გვერდზე დაბრუნება</a>
+          <a href="{{ route('events') }}" class="show-btn">ივენთების გვერდზე დაბრუნება</a>
         </div>
 
       </div>

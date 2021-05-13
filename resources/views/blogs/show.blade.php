@@ -15,8 +15,9 @@
       <div class="my-4 text-darker">
         {!! $blog->body !!}
       </div>
-      <div class="flex flex-col mt-3">
-        <a href="" class="font-bold">{{ $blog->user->name }}</a>
+      <div class="w-full flex my-10">
+        <a href="{{ route('home') }}" class="show-btn">მთავარ გვერდზე დაბრუნება</a>
+        <a href="{{ route('blogs') }}" class="show-btn">სტატიების გვერდზე დაბრუნება</a>
       </div>
     </div>
     <div class="w-3/12 flex flex-col gap-2">

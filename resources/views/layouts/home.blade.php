@@ -16,7 +16,7 @@
           <img src="/image/logo.png" class="w-10" alt="Irmas Logo">  
           <p class="font-medium text-secondary ml-1">Psychology</p>
         </a>
-      <ul class="flex items-center text-primary gap-4">
+      <ul class="flex items-center text-primary gap-6">
         <li>
           <a href="{{ route('home') }}" class="nav-link">მთავარი</a>
         </li>

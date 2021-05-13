@@ -32763,6 +32763,57 @@ video {
   }
 }
 
+.show-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 86, 80, var(--tw-bg-opacity));
+}
+
+.show-btn:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 86, 80, var(--tw-bg-opacity));
+}
+
+.show-btn {
+  --tw-border-opacity: 1;
+  border-color: rgba(16, 86, 80, var(--tw-border-opacity));
+  border-width: 1px;
+  font-weight: 500;
+}
+
+.show-btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.show-btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(16, 86, 80, var(--tw-text-opacity));
+}
+
+.show-btn:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.show-btn:focus {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.show-btn {
+  text-transform: uppercase;
+  width: 50%;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+  font-feature-settings: "case" on;
+}
+
 .uppercase {
   font-feature-settings: "case" on;
 }
