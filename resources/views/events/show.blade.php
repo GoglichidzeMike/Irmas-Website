@@ -16,15 +16,15 @@
       <img src="/uploads/image/{{ $event->image }}" class="max-w-lg bg-white p-1 -mt-32 mx-auto" alt="{{ $event->name }}">
       <div class="">
         @if($event->date || $event->duration)
-            <div class="flex justify-centermx-auto my-6 shadow-lg">
+            <div class="flex justify-centermx-auto my-6">
               @if ($event->date)
-                <div class="flex border border-primary w-1/2 justify-center uppercase p-2 border-r-0">
+                <div class="flex border border-primary w-full justify-center uppercase p-2 @if($event->duration)border-r-0 @endif">
                   <p class="text-primary  text-center mr-2 drop-shadow">დასაწყისი: </p> 
                   <p class="font-medium text-primary text-center drop-shadow"> {{ $event->date }}</p>
                 </div>
               @endif
               @if ($event->duration)
-                <div class="flex border border-primary w-1/2 justify-center uppercase p-2">
+                <div class="flex border border-primary w-full justify-center uppercase p-2">
                   <p class="text-primary text-center mr-2 drop-shadow-md">ხანგრძლივობა: </p>
                   <p class="font-medium text-primary text-center drop-shadow-md"> {{ $event->duration }}</p>
                 </div>
@@ -56,7 +56,7 @@
         @foreach ($latest as $event)
           <div class="p-3">
             <img src="/uploads/image/{{ $event->image }}" class="mb-2 rounded-lg shadow-lg" alt="{{ $event->name }}">
-            <a class="font-bold text-sm text-primary text-center" href="{{ route('public_blogs.show' , $event->slug) }}"><h2>{{ $event->name }}</h2></a>
+            <a class="font-bold text-sm text-primary text-center focus:outline-none focus:text-secondary hover:text-secondary transition-colors duration-300 ease-linear" href="{{ route('public_blogs.show' , $event->slug) }}"><h2>{{ $event->name }}</h2></a>
           </div>    
           <div class="h-px w-8/12 bg-primary mx-auto bg-opacity-60"></div>
         @endforeach

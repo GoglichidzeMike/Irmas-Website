@@ -45,8 +45,13 @@
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.animated:focus {
+    outline: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
-    .animated:hover::before {
+    .animated:hover::before,
+    .animated:focus::before {
         left: 0;
         right: auto;
         width: 100%;

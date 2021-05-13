@@ -27,7 +27,7 @@
 
         
         <div>
-          <button type="submit" class="mx-auto mt-2 block uppercase bg-green-500 text-white px-4 py-2 rounded font-medium hover:bg-green-700 transition-colors duration-300 ease">რეგისტრაცია</button>
+          <button type="submit" class="mx-auto mt-2 block uppercase bg-secondary text-white px-4 py-2 rounded font-medium hover:bg-primary transition-colors duration-300 ease focus:outline-none focus:bg-primary">რეგისტრაცია</button>
         </div>
 
     </form>

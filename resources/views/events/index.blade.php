@@ -35,17 +35,14 @@
                 </div>
               </div>
             @endif
-
           </div>
-          
-
-          <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease"" href="{{ route('public_event.show' , $event->slug) }}"><h2>{{ $event->name }}</h2></a>
+          <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease-linear focus:outline-none focus:text-secondary" href="{{ route('public_event.show' , $event->slug) }}"><h2>{{ $event->name }}</h2></a>
         </div>
 
 
 
         <div class="flex justify-between items-center">
-          <a href="{{ route('public_event.show' , $event->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary uppercase">სრულად ნახვა</a>
+          <a href="{{ route('public_event.show' , $event->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary uppercase focus:outline-none focus:bg-secondary transition-colors duration-300 ease-linear">სრულად ნახვა</a>
           <p class="text-third text-xs">  {{   $event->created_at->toFormattedDateString() }}</p>
         </div>
 

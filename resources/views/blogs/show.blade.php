@@ -29,7 +29,7 @@
       @foreach ($latest as $blog)
       <div class="p-3">
         <img src="/uploads/image/{{ $blog->image }}" class="mb-2 rounded-lg shadow-lg" alt="{{ $blog->name }}">
-        <a class="font-bold text-sm text-primary text-center" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
+        <a class="font-bold text-sm text-primary text-center focus:outline-none focus:text-secondary hover:text-secondary transition-colors duration-300 ease-linear" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
       </div>    
       <div class="h-px w-8/12 bg-primary mx-auto bg-opacity-60"></div>
         @endforeach

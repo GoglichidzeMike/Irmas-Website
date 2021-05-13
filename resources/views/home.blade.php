@@ -114,11 +114,11 @@
     <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
       <div class="mb-6">
         <img src="/uploads/image/{{ $blog->image }}" class="mb-3 rounded-lg shadow-md" alt="{{ $blog->name }}">
-        <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
+        <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease-linear focus:outline-none focus:text-secondary" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
       </div>
       
       <div class="flex justify-between items-center">
-        <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary uppercase">სრულად ნახვა</a>
+        <a href="{{ route('public_blogs.show' , $blog->slug) }}" class="px-6 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary  transition-colors duration-300 ease-linear uppercase focus:outline-none focus:bg-secondary">სრულად ნახვა</a>
         <p class="text-third text-xs">  {{   $blog->created_at->toFormattedDateString() }}</p>
       </div>
     </div>    
