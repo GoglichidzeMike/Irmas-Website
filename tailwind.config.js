@@ -2,6 +2,9 @@ module.exports = {
     purge: [],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        minHeight: {
+            252: "290px",
+        },
         extend: {
             backgroundImage: (theme) => ({
                 "blogs-index": "url('/image/blogs-bg.svg')",
