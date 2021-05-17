@@ -27,14 +27,29 @@
   <div class="bg-primary h-1/4 absolute w-full right-0 top-0" style="z-index:-1"></div>
   <div class="w-8/12 mx-auto py-20 z-50 flex justify-between">
     <div class="w-4/12">
-      <img src="/image/hero_irma.svg" alt="Irma" class="max-w-md rounded-md shadow-md">
+      <img src="/image/irma-second.jpg" alt="Irma" class="max-w-md rounded-md shadow-md">
     </div>
 
-    <div class="w-7/12">
-      <h2 class="text-3xl uppercase text-primary py-20 text-medium">გამოცდილება</h2>
+    <div class="w-7/12 py-10">
+      <h2 class="text-4xl tracking-wide uppercase text-secondary drop-shadow-xl text-medium mb-14">გამოცდილება</h2>
       <div class="">
-        <div class="p-3 shadow-md rounded-md border-gray-200 transform hover">
+        <div class="about-exp">
           <p class="font-medium text-primary">ფსიქოთერაპევტი, პოზიცია</p>
+          <p class="text-secondary my-2 text-sm">სამუშაო ადგილი, გრძელიტ ტექსტიც არის შესაძლებელი</p>
+          <p class="text-third text-xs">November 2019 - Present</p>
+        </div>
+        <div class="about-exp">
+          <p class="font-medium text-primary">მეორე ძალიან მაგარი პოზიცია</p>
+          <p class="text-secondary my-2 text-sm">სამუშაო ადგილი, მოკლე</p>
+          <p class="text-third text-xs">November 2019 - January 2020</p>
+        </div>
+        <div class="about-exp">
+          <p class="font-medium text-primary">ფსიქოთერაპევტი, პოზიცია</p>
+          <p class="text-secondary my-2 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან</p>
+          <p class="text-third text-xs">November 2019 - February 2021</p>
+        </div>
+        <div class="about-exp">
+          <p class="font-medium text-primary">გრძელი თანამდებობის დასახელება, შემთხვევიტი ტექსტი</p>
           <p class="text-secondary my-2 text-sm">სამუშაო ადგილი, გრძელიტ ტექსტიც არის შესაძლებელი</p>
           <p class="text-third text-xs">November 2019 - Present</p>
         </div>
