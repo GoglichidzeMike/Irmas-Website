@@ -5,8 +5,8 @@
 <div class="w-full bg-gray-100">
   <div class="w-8/12 mx-auto flex py-20">
     <div class="w-6/12 flex flex-col justify-center">
-      <p class="text-secondary text-sm ml-2">გამარჯობა, მე ვარ</p>
-      <h1 class="text-5xl uppercase text-primary font-medium mb-6">ირმა კვაჭაძე</h1>
+      <p class="text-secondary text-sm ml-1">გამარჯობა, მე ვარ</p>
+      <h1 class="text-5xl uppercase text-primary font-medium mb-6 tracking-wide">ირმა კვაჭაძე</h1>
       <p class="text-secondary uppercase">ფსიქოთერაპევტი</p>
       
       <p class="text-dark my-6">
@@ -23,8 +23,41 @@
   </div>
 </div>
 
+<div class="w-full relative" id="experience">
+  <div class="bg-primary h-1/4 absolute w-full right-0 top-0" style="z-index:-1"></div>
+  <div class="w-8/12 mx-auto py-20 z-50 flex justify-between">
+    <div class="w-4/12">
+      <img src="/image/hero_irma.svg" alt="Irma" class="max-w-md rounded-md shadow-md">
+    </div>
 
-<div class="h-screen"></div>
+    <div class="w-7/12">
+      <h2 class="text-3xl uppercase text-primary py-20 text-medium">გამოცდილება</h2>
+      <div class="">
+        <div class="p-3 shadow-md rounded-md border-gray-200 transform hover">
+          <p class="font-medium text-primary">ფსიქოთერაპევტი, პოზიცია</p>
+          <p class="text-secondary my-2 text-sm">სამუშაო ადგილი, გრძელიტ ტექსტიც არის შესაძლებელი</p>
+          <p class="text-third text-xs">November 2019 - Present</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+<div class="w-full" id="experience">
+  <div class="w-8/12 mx-auto">
+    მუშაობის ფორმატი
+
+    
+  </div>
+</div>
+
+<div class="min-h-screen"></div>
+
+
+@include('dashboard.includes.contact')
+
 
 
 
