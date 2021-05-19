@@ -3,13 +3,13 @@
 @section('content')
     
 <div class="w-full">
-    <div class="bg-events-index bg-cover shadow-lg py-28">
-      <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი ივენთები და მარათონები</h2>
-      <p class="text-center text-secondary filter drop-shadow-xl">აქ არის ჩვენი ივენთები, ლექციები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
+    <div class="bg-events-index bg-cover shadow-lg pt-14 pb-28 md:py-28">
+      <h2 class="text-center text-white text-2xl md:text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი ივენთები და მარათონები</h2>
+      <p class="text-center text-secondary filter drop-shadow-xl mx-10 md:mx-0">აქ არის ჩვენი ივენთები, ლექციები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
     </div>
 
-  <div class="w-8/12 mx-auto flex justify-between gap-6 -mt-20">
-    <div class="grid grid-cols-3 gap-4">
+  <div class="w-95 md:w-10/12 xl:w-8/12 mx-auto flex justify-between gap-6 -mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       @if($events->count())
       @foreach ($events as $event)
       <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:shadow-xl transition-shadow duration-300 ease-out">
@@ -21,15 +21,15 @@
               <div class="w-full absolute bottom-2 px-2">
                 <div class="flex justify-center text-sm gap-10 shadow-inner py-1 px-2 mx-auto rounded-lg bottom-2 bg-white">
                   @if ($event->date)
-                    <div class="flex">
-                      <p class="text-primary  text-center mr-1">დასაწყისი: </p> 
-                      <p class="font-medium text-primary text-center"> {{ $event->date }}</p>
+                    <div class="2xl:flex">
+                      <p class="text-primary text-center mr-1 text-xs">დასაწყისი: </p> 
+                      <p class="font-medium text-primary text-center text-xs"> {{ $event->date }}</p>
                     </div>
                   @endif
                   @if ($event->duration)
-                    <div class="flex">
-                      <p class="text-primary text-center mr-1">ხანგრძლივობა: </p>
-                      <p class="font-medium text-primary text-center"> {{ $event->duration }}</p>
+                    <div class="2xl:flex">
+                      <p class="text-primary text-center mr-1 text-xs">ხანგრძლივობა: </p>
+                      <p class="font-medium text-primary text-center text-xs"> {{ $event->duration }}</p>
                     </div>
                   @endif
                 </div>

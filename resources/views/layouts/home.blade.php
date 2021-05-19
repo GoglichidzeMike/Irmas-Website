@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <title>Irma | Home</title>
 </head>
@@ -64,37 +65,36 @@
   </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
+
 const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav")
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav");
 
+    burger.addEventListener("click", () => {
+        //Toggle Nav
+        nav.classList.toggle("nav-active");
 
-  burger.addEventListener("click", () => {
-    //Toggle Nav
-    nav.classList.toggle("nav-active");
-
-    //Burger Animation
-    burger.classList.toggle("toggle");
-  });
+        //Burger Animation
+        burger.classList.toggle("toggle");
+    });
 };
 
 navSlide();
 
-var btn = $('#button');
+var btn = $("#button");
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass("show");
+    } else {
+        btn.removeClass("show");
+    }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '100');
+btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "100");
 });
 
 

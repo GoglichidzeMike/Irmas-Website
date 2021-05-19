@@ -3,12 +3,12 @@
 @section('content')
     
 <div class="w-full">
-  <div class="bg-blogs-index bg-cover shadow-lg py-28">
-    <h2 class="text-center text-white text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი სტატიები და სიახლეები</h2>
-    <p class="text-center text-secondary filter drop-shadow-xl">აქ არის ჩვენი სიახლეები, სტატიები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
+  <div class="bg-blogs-index bg-cover shadow-lg pt-14 pb-28 md:py-28">
+    <h2 class="text-center text-white text-2xl md:text-3xl mb-4 filter drop-shadow-xl uppercase">ჩვენი სტატიები და სიახლეები</h2>
+    <p class="text-center text-secondary filter drop-shadow-xl mx-10 md:mx-0">აქ არის ჩვენი სიახლეები, სტატიები და ყველაფერი საინტერესო რასაც ვნახავთ. <br> აქ იქნება სტატიები როგორც ირმასგან ასევე სხვა ტიპებისგან.</p>
   </div>
-  <div class="w-8/12 mx-auto flex justify-between gap-6 -mt-20">
-    <div class="grid grid-cols-3 gap-4">
+  <div class="w-95 md:w-10/12 xl:w-8/12 mx-auto flex justify-between gap-6 -mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       @if($blogs->count())
       @foreach ($blogs as $blog)
         <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:shadow-xl transition-shadow duration-300 ease-out">
