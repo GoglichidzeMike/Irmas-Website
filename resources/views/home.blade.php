@@ -60,7 +60,7 @@
     </div>
     
     <div class="w-95 lg:w-7/12 mx-auto lg:mx-0">
-      <h2 class="text-3xl text-center lg:text-left text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <h2 class="text-2xl md:text-3xl text-center lg:text-left text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
       <p class="mx-auto lg:mx-0 text-sm sm:text-base w-11/12 text-third mb-6">
         შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
@@ -102,17 +102,17 @@
 </div>
 
 @if($latest->count())
-<div class="w-full bg-primary hidden">
-  <div class="w-8/12 mx-auto pt-14 pb-40">
-    <h2 class="text-3xl text-white text-center font-medium uppercase">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
+<div class="w-full bg-primary">
+  <div class="w-95 md:w-10/12 lg:w-8/12 mx-auto pt-14 pb-40">
+    <h2 class="text-2xl md:text-3xl text-white text-center font-medium uppercase">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
   </div>
 
 </div>
-<div class="w-full mb-32 hidden">
-  <div class="w-8/12 mx-auto -mt-32 latest grid grid-cols-3 gap-4">
+<div class="w-full mb-32">
+  <div class="w-95 lg:w-10/12 xl:w-8/12 mx-auto -mt-32 latest grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
     @foreach ($latest as $blog)
-    <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+    <div class="p-2 flex flex-col justify-between bg-white shadow-md rounded-lg transform hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out max-w-412 mx-auto">
       <div class="mb-6">
         <img src="/uploads/image/{{ $blog->image }}" class="mb-3 rounded-lg shadow-md" alt="{{ $blog->name }}">
         <a class="font-bold text-primary hover:text-secondary transition-colors duration-300 ease-linear focus:outline-none focus:text-secondary" href="{{ route('public_blogs.show' , $blog->slug) }}"><h2>{{ $blog->name }}</h2></a>
@@ -131,13 +131,13 @@
 <p>There are no blogs</p>    
 @endif
 
-<div class="partners bg-gray-100 relative hidden">
-  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0">
-  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0">
-  <div class="w-8/12 mx-auto text-center mt-20 mb-28">
-    <h2 class="text-primary text-3xl font-medium uppercase mb-2">პარტნიორები</h2>
+<div class="partners bg-gray-100 relative">
+  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0 hidden xl:block">
+  <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0 hidden xl:block">
+  <div class="w-95 md:w-10/12 lg:w-8/12 mx-auto text-center mt-20 mb-28">
+    <h2 class="text-primary text-2xl md:text-3xl font-medium uppercase mb-2">პარტნიორები</h2>
     <p class="text-secondary mb-8">პარტნიორების ტექსტი, შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br/> და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
-    <div class="flex flex-wrap gap-8">
+    <div class="flex flex-wrap gap-8 justify-center">
       <div class="partner">
         <img src="/image/google.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">დასახელება მეორე</p>
@@ -162,7 +162,7 @@
   </div>  
 </div>
 
-<div class="contact-container hidden">
+<div class="contact-container">
   @include('dashboard.includes.contact')
 </div>
   
