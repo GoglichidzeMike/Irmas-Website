@@ -53,48 +53,48 @@
   </div>
 </div>
 
-<div class="w-full bg-gray-100 pb-20 hidden">
-  <div class="w-8/12 mx-auto flex justify-between">
-    <div class="w-4/12 -mt-20">
+<div class="w-full bg-gray-100 pb-20">
+  <div class="w-95 md:w-8/10 lg:w-8/12 mx-auto lg:flex justify-between">
+    <div class="w-10/12 mx-auto lg:mx-0 md:w-4/12 -mt-20">
       <img src="/image/irma-second.jpg" alt="Irma" class="rounded-lg shadow-md">
     </div>
     
-    <div class="w-7/12">
-      <h2 class="text-3xl text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
-      <p class="w-11/12 text-third mb-6">
+    <div class="w-95 lg:w-7/12 mx-auto lg:mx-0">
+      <h2 class="text-3xl text-center lg:text-left text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <p class="mx-auto lg:mx-0 text-sm sm:text-base w-11/12 text-third mb-6">
         შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
       <div class="card-container flex flex-col gap-6">
         <div class="card">
-          <img src="/image/head-2.svg" alt="Brain Illustration" class="w-24 ml-4 h-auto">
+          <img src="/image/head-2.svg" alt="Brain Illustration" class="w-16 sm:w-24 sm:ml-4 h-auto">
           <div class="div">
             <p class="text-primary font-medium text-md mb-4">ფსიქოთერაფია & ფსიქოლოგია</p>
             <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
           </div>
         </div>
         <div class="card">
-          <img src="/image/brain-1.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <img src="/image/brain-1.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
             <p class="text-primary font-medium text-md mb-4">ფსიქოგანათლება</p>
             <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად </p>
           </div>
         </div>
         <div class="card">
-          <img src="/image/head-1.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <img src="/image/head-1.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
             <p class="text-primary font-medium text-md mb-4">ფიზიკური რაღაცა</p>
             <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს</p>
           </div>
         </div>
         <div class="card">
-          <img src="/image/brain-2.svg" alt="Brain Illustration" class="w-24 h-auto">
+          <img src="/image/brain-2.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
             <p class="text-primary font-medium text-md mb-4">სავარძელზე წამოწოლა</p>
             <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს</p>
           </div>
         </div>
       </div>
-      <div class="mt-6">
+      <div class="mt-6 flex md:block justify-center">
         <a href="/about" class="btn bg-primary text-white">მეტი ირმას შესახებ</a>
       </div>
     </div>

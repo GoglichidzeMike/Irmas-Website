@@ -32655,8 +32655,8 @@ video {
 }
 
 .card {
-  width: 91.666667%;
-  gap: 2.5rem;
+  width: 100%;
+  gap: 1rem;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -32679,6 +32679,18 @@ video {
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
+}
+
+@media (min-width: 640px) {
+  .card {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 91.666667%;
+  }
 }
 
 .partner {
