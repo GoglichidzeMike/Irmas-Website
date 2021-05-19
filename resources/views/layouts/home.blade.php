@@ -9,8 +9,8 @@
 </head>
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
 
-  <div class="w-full z-10 hidden md:block">
-    <div class="py-4  w-8/12  mx-auto flex justify-between items-center">
+  <div class="w-full z-10">
+    <div class="py-4 w-95  xl:w-8/12  mx-auto flex justify-between items-center">
 
         <a class="flex items-center" href="{{ route('home') }}">
           <img src="/image/logo.png" class="w-10" alt="Irmas Logo">  
@@ -38,26 +38,26 @@
       @yield('content')
 
 
-  <footer class="mt-32 bg-primary w-full hidden">
-    <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
+  <footer class="mt-32 bg-primary w-full">
+    <div class="w-full lg:w-8/12  px-4 lg:px-0 py-4 text-white mx-auto flex flex-col sm:flex-row justify-between">
       <ul class="flex text-sm align-center gap-2">
         <li>
-          <a href="{{ route('home') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
+          <a href="{{ route('home') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
         </li>
-        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
         <li>
-          <a href="{{ route('blogs') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
+          <a href="{{ route('blogs') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
         </li>
-        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
         <li>
-          <a href="{{ route('events') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
+          <a href="{{ route('events') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
         </li>
-        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
         <li>
-          <a href="{{ route('about') }}" class="py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
+          <a href="{{ route('about') }}" class="text-xs sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
         </li>
       </ul>
-      <p class="text-sm">Dev By - <a href="https://goglichidze.me" target="_blank" class="hover:text-secondary focus:outline-none focus:text-secondary transition duration-300 ease-out"> Mikael</a></p>
+      <p class="text-sm hidden sm:block">Dev By - <a href="https://goglichidze.me" target="_blank" class="text-xs sm:text-base hover:text-secondary focus:outline-none focus:text-secondary transition duration-300 ease-out"> Mikael</a></p>
     </div>
   </footer>
 
