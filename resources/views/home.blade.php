@@ -4,55 +4,56 @@
     
 <div class="bg-gray-100 w-44  h-570 absolute -z-1 top-0 right-0 rounded-bl-lg"></div>
 <div class="w-full z-10">
-  <div class="w-8/12 flex justify-between mx-auto">
-    <div class="flex flex-col justify-center w-7/12 pr-8">
-      <h1 class="text-4xl text-primary font-medium mt-6 uppercase">მთავარი სათაური <span class="text-secondary">იქნება</span> სიტყვა აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
+  <div class="w-95  sm:w-10/12 lg:w-8/12 md:mb-20 xl:mb-0 md:flex justify-between mx-auto">
+    <div class="flex flex-col justify-center w-full md:w-7/12  mx-auto md:pr-8">
+      <h1 class="text-2xl sm:text-4xl text-primary font-medium mt-6 uppercase">მთავარი სათაური <span class="text-secondary">იქნება</span> სიტყვა აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
       
-      <p class="text-primary my-14">
+      <p class="text-primary my-6 sm:my-14">
         შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
       
-      <div>
-        <a href="#contact" class="btn bg-primary text-white mr-6">კონტაქტი</a>
-        <a href="{{ route('about') }}" class="btn hover:text-white text-primary">ჩვენს შესახებ</a>
+      <div class="mx-auto md:m-0">
+        <a href="#contact" class="btn bg-primary text-white mr-2 sm:mr-6">კონტაქტი</a>
+        <a href="{{ route('about') }}" class="btn hover:text-white text-primary">ჩვენ შესახებ</a>
       </div>
     </div>
-    <div class="w-5/12">
-      <img src="/image/hero_irma.svg" class="max-w-md rounded-lg m-4 shadow-lg" alt="Irma">
+    <div class="w-full md:w-5/12">
+      <img src="/image/hero_irma.svg" class="max-w-300 mx-auto my-4 lg:max-w-md rounded-lg md:m-4 shadow-lg" alt="Irma">
     </div>
   </div>
 </div>
 <div class="w-full bg-primary py-20">
-  <div class="w-8/12 m-auto flex items-center">
-    <h2 class="text-3xl text-white w-8/12 uppercase">
+  <div class="w-95 md:w-10/12 lg:w-8/12 m-auto md:flex items-center">
+    <h2 class="text-xl md:text-3xl text-white w-95 md:w-8/12 uppercase mx-auto md:m-0">
       მე შემიძლია <span class="text-secondary">თერაპიაში</span> და შემდეგ <span class="text-secondary">საკითხებში</span> დაგეხმარო
       და ეს მხოლოდ <span class="text-secondary">ზოგიერთი რამეა</span> რაშიც შეგვიძლია მუშაობა.
     </h2>
     <div class="illu">
-      <img src="/image/illu.png" alt="Psychology Illustration" class="w-80">
+      <img src="/image/illu.png" alt="Psychology Illustration" class="max-w-300 md:w-80 mt-6 mx-auto md:m-0">
     </div>
   </div>
-  <div class="mx-auto w-8/12 flex justify-between my-10">
-    <div class="flex flex-col w-72">
+
+  <div class="mx-auto w-95 md:w-10/12 lg:w-8/12 flex flex-col md:flex-row justify-between items-center md:items-start my-10">
+    <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
       <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">შფოთვა</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
     </div>
-    <div class="flex flex-col w-72">
+    <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
       <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">ფობია მეორე</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული</p>
     </div>
-    <div class="flex flex-col w-72">
-      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დამოკიდებულება</p>
-      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის</p>
-    </div>
-    <div class="flex flex-col w-72">
+    <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
       <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დეპრესია</p>
       <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება</p>
+    </div>
+    <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დამოკიდებულება</p>
+      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის</p>
     </div>
   </div>
 </div>
 
-<div class="w-full bg-gray-100 pb-20">
+<div class="w-full bg-gray-100 pb-20 hidden">
   <div class="w-8/12 mx-auto flex justify-between">
     <div class="w-4/12 -mt-20">
       <img src="/image/irma-second.jpg" alt="Irma" class="rounded-lg shadow-md">
@@ -101,13 +102,13 @@
 </div>
 
 @if($latest->count())
-<div class="w-full bg-primary">
+<div class="w-full bg-primary hidden">
   <div class="w-8/12 mx-auto pt-14 pb-40">
     <h2 class="text-3xl text-white text-center font-medium uppercase">ბოლოს დამატებული <span class="text-secondary">სტატიები</span></h2>
   </div>
 
 </div>
-<div class="w-full mb-32">
+<div class="w-full mb-32 hidden">
   <div class="w-8/12 mx-auto -mt-32 latest grid grid-cols-3 gap-4">
 
     @foreach ($latest as $blog)
@@ -130,7 +131,7 @@
 <p>There are no blogs</p>    
 @endif
 
-<div class="partners bg-gray-100 relative">
+<div class="partners bg-gray-100 relative hidden">
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0">
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0">
   <div class="w-8/12 mx-auto text-center mt-20 mb-28">
@@ -161,7 +162,7 @@
   </div>  
 </div>
 
-<div class="contact-container">
+<div class="contact-container hidden">
   @include('dashboard.includes.contact')
 </div>
   

@@ -18,6 +18,7 @@ module.exports = {
             full: "100%",
             screen: "100vh",
         },
+
         extend: {
             backgroundImage: (theme) => ({
                 "blogs-index": "url('/image/blogs-bg.svg')",
@@ -34,9 +35,13 @@ module.exports = {
             },
             width: {
                 44: "44%",
+                95: "95%",
             },
             height: {
                 570: "570px",
+            },
+            maxWidth: {
+                300: "300px",
             },
         },
     },

@@ -9,7 +9,7 @@
 </head>
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
 
-  <div class="w-full z-10">
+  <div class="w-full z-10 hidden md:block">
     <div class="py-4  w-8/12  mx-auto flex justify-between items-center">
 
         <a class="flex items-center" href="{{ route('home') }}">
@@ -38,7 +38,7 @@
       @yield('content')
 
 
-  <footer class="mt-32 bg-primary w-full">
+  <footer class="mt-32 bg-primary w-full hidden">
     <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
       <ul class="flex text-sm align-center gap-2">
         <li>
