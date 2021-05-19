@@ -8,7 +8,6 @@
       <p class="text-secondary text-sm ml-1">გამარჯობა, მე ვარ</p>
       <h1 class="text-5xl uppercase text-primary font-medium mb-6 tracking-wide">ირმა კვაჭაძე</h1>
       <p class="text-secondary uppercase">ფსიქოთერაპევტი</p>
-      
       <p class="text-dark my-6">
         შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
       </p>
@@ -97,7 +96,7 @@
     <div class="w-3/12">
       <img src="/image/about/books.jpg" alt="Books" class="-mt-12 rounded-md shadow-md h-4/5 object-cover">
     </div>
-    
+
     <div class="w-5/12 flex flex-col items-center">
 
       <div class="rounded-lg shadow-lg p-4 border-2 border-gray-200 my-6 min-h-252">
@@ -116,7 +115,6 @@
     </div>
   </div>
 </div>
-
 
 
 @include('dashboard.includes.contact')

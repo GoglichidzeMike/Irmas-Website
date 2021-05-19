@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior:smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,32 +38,28 @@
       @yield('content')
 
 
-    <footer class="mt-32 bg-primary w-full">
-      <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
-        <ul class="flex text-sm align-center gap-2">
-          <li>
-            <a href="{{ route('home') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
-          </li>
-          <div class="w-px h-auto bg-white bg-opacity-50"></div>
-          <li>
-            <a href="{{ route('blogs') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
-          </li>
-          <div class="w-px h-auto bg-white bg-opacity-50"></div>
-          <li>
-            <a href="{{ route('events') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
-          </li>
-          <div class="w-px h-auto bg-white bg-opacity-50"></div>
-          <li>
-            <a href="{{ route('about') }}" class="py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
-          </li>
-        </ul>
-        <p class="text-sm">Dev By - <a href="https://goglichidze.me" target="_blank" class="hover:text-secondary focus:outline-none focus:text-secondary transition duration-300 ease-out"> Mikael</a></p>
-
-      </div>
-       
-
-
-    </footer>
+  <footer class="mt-32 bg-primary w-full">
+    <div class="w-8/12  py-4 text-white mx-auto flex justify-between">
+      <ul class="flex text-sm align-center gap-2">
+        <li>
+          <a href="{{ route('home') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
+        </li>
+        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <li>
+          <a href="{{ route('blogs') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
+        </li>
+        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <li>
+          <a href="{{ route('events') }}" class="py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
+        </li>
+        <div class="w-px h-auto bg-white bg-opacity-50"></div>
+        <li>
+          <a href="{{ route('about') }}" class="py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
+        </li>
+      </ul>
+      <p class="text-sm">Dev By - <a href="https://goglichidze.me" target="_blank" class="hover:text-secondary focus:outline-none focus:text-secondary transition duration-300 ease-out"> Mikael</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>

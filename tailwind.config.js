@@ -2,8 +2,21 @@ module.exports = {
     purge: [],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+        },
         minHeight: {
             252: "290px",
+            0: "0",
+            "1/4": "25%",
+            "1/2": "50%",
+            "3/4": "75%",
+            full: "100%",
+            screen: "100vh",
         },
         extend: {
             backgroundImage: (theme) => ({
@@ -21,6 +34,9 @@ module.exports = {
             },
             width: {
                 44: "44%",
+            },
+            height: {
+                570: "570px",
             },
         },
     },

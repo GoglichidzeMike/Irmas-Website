@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="bg-gray-100 w-44  h-3/5 absolute -z-1 top-0 right-0 rounded-bl-lg"></div>
+<div class="bg-gray-100 w-44  h-570 absolute -z-1 top-0 right-0 rounded-bl-lg"></div>
 <div class="w-full z-10">
   <div class="w-8/12 flex justify-between mx-auto">
     <div class="flex flex-col justify-center w-7/12 pr-8">

@@ -31,7 +31,12 @@
               @endif
             </div>
         @endif
-        <div class="text-dark">
+        <div class="text-dark relative">
+          <div class="absolute flex flex-col items-center -ml-12 h-2.5" id="fixed">
+            <p class="uppercase text-xs font-medium">Share</p>
+            <img src="/image/about/fb-share.svg" alt="Fb share" class="w-8 mb-2">
+            <img src="/image/about/link-share.svg" alt="Fb share" class="w-8">
+          </div>
           {!! $event->body !!}
         </div>
 
@@ -65,6 +70,35 @@
   </div>
 </div>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+
+  $(document).ready(function() {
+    // Get the current top location of the nav bar.
+    var stickyNavTop = $('#fixed').offset().top;
+  
+    // Set the header's height to its current height in CSS
+    // If we don't do this, the content will jump suddenly when passing through stickyNavTop.
+    $('header').height($('header').height());
+  
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= stickyNavTop) {
+            $('#fixed').addClass('fixed-header');
+        } else {
+            $('#fixed').removeClass('fixed-header');
+        }
+    });
+  });
+</script>
+
+<style>
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+</style>
 
 
 
