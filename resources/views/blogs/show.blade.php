@@ -82,10 +82,10 @@
   }(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- Your share button code -->
-  <div class="fb-share-button" 
+  {{-- <div class="fb-share-button" 
   data-href="{{ route('blogs') }}/{{ $blog->slug}}" 
   data-layout="button_count">
-</div>
+</div> --}}
 
 
 

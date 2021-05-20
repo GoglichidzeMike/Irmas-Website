@@ -64,7 +64,7 @@
       <p class="mx-auto lg:mx-0 text-sm sm:text-base w-11/12 text-third mb-6">
         შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
-      <div class="card-container flex flex-col gap-6">
+      <div class="card-container flex flex-col space-y-6">
         <div class="card">
           <img src="/image/head-2.svg" alt="Brain Illustration" class="w-16 sm:w-24 sm:ml-4 h-auto">
           <div class="div">
@@ -137,24 +137,24 @@
   <div class="w-95 md:w-10/12 lg:w-8/12 mx-auto text-center mt-20 mb-28">
     <h2 class="text-primary text-2xl md:text-3xl font-medium uppercase mb-2">პარტნიორები</h2>
     <p class="text-secondary mb-8">პარტნიორების ტექსტი, შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br/> და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
-    <div class="flex flex-wrap gap-8 justify-center">
-      <div class="partner">
+    <div class="flex flex-wrap gap-6 justify-center">
+      <div class="partner mb-4">
         <img src="/image/google.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">დასახელება მეორე</p>
       </div>
-      <div class="partner">
+      <div class="partner mb-4">
         <img src="/image/snapchat.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">პარტნიორი მეორე</p>
       </div>
-      <div class="partner">
+      <div class="partner mb-4">
         <img src="/image/tiktok.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">ფიგმუნდ ზროიდი</p>
       </div>
-      <div class="partner">
+      <div class="partner mb-4">
         <img src="/image/youtube.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">ფსიქოლოგია</p>
       </div>
-      <div class="partner">
+      <div class="partner mb-4">
         <img src="/image/snapchat-alt.svg" alt="Google Logo" class="mb-4">
         <p class="text-primary">მოკლე</p>
       </div>

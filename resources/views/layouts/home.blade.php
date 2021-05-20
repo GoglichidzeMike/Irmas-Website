@@ -21,7 +21,7 @@
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-      <ul class="flex flex-col md:flex-row md:items-center text-primary gap-2 my-4 md:m-0 md:gap-6">
+      <ul class="flex flex-col md:flex-row md:items-center text-primary space-y-2 my-4 md:m-0 md:space-x-6 md:space-y-0">
         <li>
           <a href="{{ route('home') }}" class="nav-link">მთავარი</a>
         </li>
@@ -45,7 +45,7 @@
 
   <footer class="mt-32 bg-primary w-full">
     <div class="w-full lg:w-8/12  px-4 lg:px-0 py-4 text-white mx-auto flex flex-col sm:flex-row justify-between">
-      <ul class="flex text-sm align-center gap-2">
+      <ul class="flex text-sm align-center space-x-2">
         <li>
           <a href="{{ route('home') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
         </li>
