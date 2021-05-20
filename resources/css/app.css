@@ -23,7 +23,7 @@
 }
 
 .show-btn {
-    @apply w-1/2 text-center text-primary font-medium uppercase border border-primary py-2 focus:outline-none hover:bg-primary hover:text-white transition-colors duration-300 ease-linear focus:bg-primary focus:text-white;
+    @apply w-1/2 text-sm md:text-base text-center text-primary font-medium uppercase border border-primary py-2 focus:outline-none hover:bg-primary hover:text-white transition-colors duration-300 ease-linear focus:bg-primary focus:text-white;
 }
 
 .about-exp {
@@ -60,7 +60,7 @@
 
 .burger {
     width: 50px;
-    height: 49px;
+    height: 50px;
     background: white;
     opacity: 0.9;
     padding: 0.5rem;
@@ -71,7 +71,7 @@
 .burger div {
     height: 3px;
     background-color: #105650;
-    margin: 5px;
+    margin: 6px;
     transition: all 0.3s ease;
 }
 

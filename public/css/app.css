@@ -32841,6 +32841,8 @@ video {
   border-color: rgba(16, 86, 80, var(--tw-border-opacity));
   border-width: 1px;
   font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .show-btn:focus {
@@ -32875,6 +32877,13 @@ video {
   transition-timing-function: linear;
   transition-duration: 300ms;
   font-feature-settings: "case" on;
+}
+
+@media (min-width: 768px) {
+  .show-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .about-exp {
@@ -32938,7 +32947,7 @@ video {
 
 .burger {
   width: 50px;
-  height: 49px;
+  height: 50px;
   background: white;
   opacity: 0.9;
   padding: 0.5rem;
@@ -32949,7 +32958,7 @@ video {
 .burger div {
   height: 3px;
   background-color: #105650;
-  margin: 5px;
+  margin: 6px;
   transition: all 0.3s ease;
 }
 

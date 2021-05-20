@@ -4,16 +4,16 @@
     
 <div class="w-full">
   <div class="w-full bg-primary pt-20 pb-32">
-    <div class="w-6/12 mx-auto">
+    <div class="w-full md:w-6/12 mx-auto">
       <h2 class="text-3xl mb-1 font-medium filter drop-shadow-lg text-center text-white uppercase">{{ $blog->name }}</h2>
       <p class="text-third text-center mb-4 text-sm">  {{   $blog->created_at->toFormattedDateString() }}</p>
     </div>
   </div>
-  <div class="w-8/12 mx-auto flex justify-between gap-8">
-    <div class="w-9/12">
-      <img src="/uploads/image/{{ $blog->image }}" class="max-w-lg bg-white p-1 -mt-32 mx-auto" alt="{{ $blog->name }}">
+  <div class="w-95 md:w-11/12 lg:w-8/12 mx-auto md:flex justify-between gap-8">
+    <div class="w-full md:w-9/12">
+      <img src="/uploads/image/{{ $blog->image }}" class="md:max-w-lg bg-white p-1 -mt-32 mx-auto" alt="{{ $blog->name }}">
       <div class="my-4 text-darker relative">
-        <div class="absolute flex flex-col items-center -ml-12 h-2.5" id="fixed">
+        <div class="absolute md:flex flex-col items-center -ml-12 h-2.5 hidden" id="fixed">
           <p class="uppercase text-xs font-medium">Share</p>
           <img src="/image/about/fb-share.svg" alt="Fb share" class="w-8 mb-2">
           <img src="/image/about/link-share.svg" alt="Fb share" class="w-8">
@@ -25,7 +25,7 @@
         <a href="{{ route('blogs') }}" class="show-btn">სტატიების გვერდზე დაბრუნება</a>
       </div>
     </div>
-    <div class="w-3/12 flex flex-col gap-2">
+    <div class="w-full md:w-3/12 flex flex-col gap-2">
       <div class="">
         <p class="mb-2 text-primary font-medium text-lg text-center mt-4 uppercase tracking-widest">ბოლოს დამატებული</p>
         <div class="h-px w-full bg-primary mx-auto bg-opacity-60"></div>
