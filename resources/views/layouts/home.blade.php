@@ -13,7 +13,9 @@
   <a id="button"></a>
   <div class="nav w-full z-10 md:h-auto  overflow-hidden">
     <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
+      <a href="{{ route('home') }}">
         <img src="/image/logo.png" class="w-10" alt="Irmas Logo">  
+      </a>
         <div class="burger absolute top-3 right-2 md:hidden cursor-pointer">
           <div class="line1"></div>
           <div class="line2"></div>
