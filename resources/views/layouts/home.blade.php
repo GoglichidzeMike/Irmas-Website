@@ -44,25 +44,43 @@
 
 
   <footer class="mt-32 bg-primary w-full">
-    <div class="w-full lg:w-8/12  px-4 lg:px-0 py-4 text-white mx-auto flex flex-col sm:flex-row justify-between">
-      <ul class="flex text-sm align-center space-x-2">
-        <li>
-          <a href="{{ route('home') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
-        </li>
-        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
-        <li>
-          <a href="{{ route('blogs') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
-        </li>
-        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
-        <li>
-          <a href="{{ route('events') }}" class="text-xs sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
-        </li>
-        <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
-        <li>
-          <a href="{{ route('about') }}" class="text-xs sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
-        </li>
+    <div class="w-full lg:w-8/12  px-4 lg:px-0 py-4 text-white mx-auto ">
+
+      <ul class="text-sm align-center space-x-2 flex flex-row sm:justify-between">
+        <div class="flex space-x-2">
+
+          <div class="sm:flex sm:space-x-2">
+            <li>
+              <a href="{{ route('home') }}" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">მთავარი</a>
+            </li>
+            <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
+            <li>
+              <a href="{{ route('blogs') }}" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">სტატიები</a>
+            </li>
+            <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
+          </div>
+          <div class="sm:flex sm:space-x-2">
+            <li>
+              <a href="{{ route('events') }}" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">ივენთები</a>
+            </li>
+            <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
+            <li>
+              <a href="{{ route('about') }}" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
+            </li>
+          </div>
+        </div>
+          
+        <div class="sm:flex sm:space-x-2 align-center">
+          <li>
+            <a href="{{ route('dashboard') }}" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">დეშბორდი</a>  
+          </li>
+          <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
+          <li>
+            <a href="https://goglichidze.me" target="_blank" rel="nofollow" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out">&copy; Mikael</a>  
+          </li>
+        </div>
       </ul>
-      <p class="text-sm hidden sm:block">Dev By - <a href="https://goglichidze.me" target="_blank" class="text-xs sm:text-base hover:text-secondary focus:outline-none focus:text-secondary transition duration-300 ease-out"> Mikael</a></p>
+        
     </div>
   </footer>
 
@@ -102,8 +120,5 @@ btn.on("click", function (e) {
 
 
 </script>
-
-
-
 </body>
 </html>

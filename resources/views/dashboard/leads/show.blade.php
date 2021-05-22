@@ -4,12 +4,8 @@
 @section('content')
     
 <div class="flex flex-col items-center" >
-  @include('dashboard.includes.nav')
-
-  <div class="w-8/12 bg-white p-6 mb-10 rounded-lg">
-
-
-    <h2 class="text-3xl">
+  <div class="w-95 md:w-8/12 bg-white py-6 px-2 md:p-6 mb-10 rounded-lg">
+    <h2 class="text-2xl sm:text-3xl">
       {{$lead->name}}      
     </h2>
 

@@ -56,7 +56,7 @@ Route::get('/dashboard/leads', [LeadController::class, 'index'])->name('lead.das
 Route::post('/contact', [LeadController::class,'store'])->name('contact');
 Route::post('/contact/leads/{id}', [LeadController::class, 'destroy'])->name('lead.destroy')->middleware('auth');
 Route::get('/leads/export', [LeadController::class, 'exportCsv'])->name('lead.export')->middleware('auth');
-Route::get('/leads/{id}', [LeadController::class, 'show'])->name('lead.show')->middleware('auth');
+Route::get('/dashboard/leads/{id}', [LeadController::class, 'show'])->name('lead.show')->middleware('auth');
 
 //Auth routes
 Route::get('/login', [LoginController::class,'index'])->name('login');

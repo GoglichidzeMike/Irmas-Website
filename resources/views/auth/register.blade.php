@@ -2,8 +2,8 @@
 
 @section('content')
     
-<div class="flex justify-center">
-  <div class="w-4/12 bg-white p-6 rounded-lg">
+<div class="flex justify-center my-auto items-center">
+  <div class="w-95 sm:w-8/12 md:w-6/12 lg:w-4/12 bg-white p-6 rounded-lg text-sm sm:text-base">
     <form action="{{ route('register') }}" method="post">
        @csrf
        <div class="mb-4">

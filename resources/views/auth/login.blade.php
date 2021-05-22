@@ -2,8 +2,8 @@
 
 @section('content')
     
-<div class="flex justify-center">
-  <div class="w-4/12 bg-white p-6 rounded-lg">
+<div class="flex justify-center my-auto items-center">
+  <div class="w-95 sm:w-8/12 md:w-6/12 lg:w-4/12 bg-white p-6 rounded-lg text-sm sm:text-base">
 
     @if (session('status'))
     <div class="bg-red-500 p-4 rounded-lg mb-6 text-white text-center">
