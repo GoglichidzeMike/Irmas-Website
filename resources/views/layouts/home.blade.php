@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  <title>Irma | Home</title>
+  <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
+  <script src="/js/app.js" defer></script>
+  <script src="/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" rel="preload" as="script"></script>
+  <title>{{ $title }}</title>
 </head>
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
@@ -32,10 +32,10 @@
           <a href="{{ route('events') }}" class="nav-link">ივენთები</a>
         </li>
         <li>
-          <a href="{{ route('about') }}" class="nav-link">ჩემს შესახებ</a>  
+          <a href="{{ route('about') }}" class="nav-link">ჩემ შესახებ</a>  
         </li>
       </ul>
-      <a href="#contact" class="text-sm md:text-base bg-secondary py-2 px-8 shadow-md text-white rounded-xl hover:bg-primary hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">კონტაქტი</a>
+      <a href="/#contact" class="text-sm md:text-base bg-secondary py-2 px-8 shadow-md text-white rounded-xl hover:bg-primary hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">კონტაქტი</a>
       </ul>
     </div>
   </div>
@@ -65,7 +65,7 @@
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="{{ route('about') }}" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემს შესახებ</a>  
+              <a href="{{ route('about') }}" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">ჩემ შესახებ</a>  
             </li>
           </div>
         </div>
@@ -83,42 +83,5 @@
         
     </div>
   </footer>
-
-
-<script>
-
-const navSlide = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav");
-
-    burger.addEventListener("click", () => {
-        //Toggle Nav
-        nav.classList.toggle("nav-active");
-
-        //Burger Animation
-        burger.classList.toggle("toggle");
-    });
-};
-
-navSlide();
-
-var btn = $("#button");
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass("show");
-    } else {
-        btn.removeClass("show");
-    }
-});
-
-btn.on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "100");
-});
-
-
-
-</script>
 </body>
 </html>

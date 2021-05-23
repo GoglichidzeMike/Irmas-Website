@@ -20,26 +20,26 @@
       </div>
       <div class="flex my-3">
         <img src="/image/contact/contact_fb.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">fb.me/irmasfb</p>
+        <a href="https://fb.me/irma.kvachadze.psy" rel="nofollow" target="_blank"><p class="text-primary ml-4">Psychology Today</p></a>
       </div>
       <div class="flex my-3">
-        <img src="/image/contact/contact_link.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">linked.in/irmapsy</p>
+        <img src="/image/contact/contact_inst.svg" alt="Smartphone Icon" class="w-6">
+        <a href="https://www.instagram.com/mushki/" rel="nofllow" target="_blank"><p class="text-primary ml-4">instagram.com/mushki</p></a>
       </div>
     </div>
     <form action="{{ route('contact') }}" method="post" enctype="multipart/form-data" class="w-full lg:w-9/12 md:flex gap-x-10">
       @csrf
       <div class="w-full sm:w-1/2 mx-auto md:mx-0">
         <label for="name" class="text-primary block font-light mb-1">სახელი</label>
-        <input type="text" name="name" id="name" autocomplete="off" placeholder="თქვენი სახელი" class="input" value="{{ old('name') }}" @error('name') border-red-500 @enderror>
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="თქვენი სახელი" required class="input" value="{{ old('name') }}" @error('name') border-red-500 @enderror>
         <label for="email" class="text-primary block font-light mb-1">მეილი</label>
-        <input type="email" name="email" id="email" autocomplete="off" placeholder="თქვენი e-mail" class="input" value="{{ old('email') }}"  @error('email') border-red-500 @enderror>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="თქვენი e-mail" required class="input" value="{{ old('email') }}"  @error('email') border-red-500 @enderror>
         <label for="phone" class="text-primary block font-light mb-1">ტელეფონი</label>
-        <input type="text" name="phone" id="phone" autocomplete="off" placeholder="თქვენი ტელეფონის ნომერი" class="input" value="{{ old('phone') }}" @error('phone') border-red-500 @enderror>
+        <input type="text" name="phone" id="phone" autocomplete="off" placeholder="თქვენი ტელეფონის ნომერი" required class="input" value="{{ old('phone') }}" @error('phone') border-red-500 @enderror>
       </div>
       <div class="w-full sm:w-1/2 mx-auto md:mx-0">
         <label for="message" class="text-primary block font-light mb-1">შეტყობინება</label>
-        <textarea name="message" id="message" rows="6" class="input" value="{{ old('message') }}" @error('message') border-red-500 @enderror></textarea>
+        <textarea name="message" id="message" rows="6" class="input" value="{{ old('message') }}" required @error('message') border-red-500 @enderror></textarea>
         <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out uppercase">გაგზავნა</button>
       </div>
     </form>

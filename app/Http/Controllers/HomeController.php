@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
 
         $latest = Blog::orderBy('created_at', 'desc')->take(3)->get(); 
-        return view('home', [ 'latest'=> $latest ]);
+        return view('home', [ 'latest'=> $latest, 'title' => 'მთავარი - ფსიქოლოგია დღეს' ]);
     }
 
     public function blogs_index()
@@ -21,7 +21,8 @@ class HomeController extends Controller
 
         $blogs = Blog::orderBy('created_at', 'desc')->paginate(10); 
         return view('blogs.index', [ 
-            'blogs' => $blogs
+            'blogs' => $blogs,
+            'title' => 'სტატიები - ფსიქოლოგია დღეს'
             ]);
         }
         
@@ -31,7 +32,8 @@ class HomeController extends Controller
         $latest = Blog::orderBy('created_at', 'desc')->take(3)->get(); 
         return view('blogs.show',[
             'blog' => $blog,
-            'latest'=>$latest
+            'latest'=>$latest,
+            'title' => $blog->name.' - ფსიქოლოგია დღეს'
         ]);
     }
 
@@ -41,7 +43,8 @@ class HomeController extends Controller
    {
         $events = Event::orderBy('created_at', 'desc')->paginate(10); 
         return view('events.index', [ 
-            'events' => $events
+            'events' => $events,
+            'title' => 'ივენთები - ფსიქოლოგია დღეს'
         ]);
    }
    
@@ -53,14 +56,17 @@ class HomeController extends Controller
         $latest = Event::orderBy('created_at', 'desc')->take(3)->get(); 
         return view('events.show',[
             'event' => $event,
-            'latest' => $latest
+            'latest' => $latest,
+            'title' => $event->name.' - ფსიქოლოგია დღეს'
         ]);
     }
 
 
     public function about()
     {
-        return view('about.index');
+        return view('about.index', [
+            'title' => 'ჩემ შესახებ - ფსიქოლოგია დღეს'
+        ]);
     }
 
 }
