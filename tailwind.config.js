@@ -1,5 +1,34 @@
 module.exports = {
-    purge: [],
+    purge: {
+        enabled: true,
+        content: [
+            "./resources/css.app.css",
+            "./resources/js/app.js",
+            "./resources/views/about/index.blade.php",
+            "./resources/views/auth/login.blade.php",
+            "./resources/views/auth/register.blade.php",
+            "./resources/views/blogs/index.blade.php",
+            "./resources/views/show.blade.php",
+            "./resources/views/dashboard/events/create.blade.php",
+            "./resources/views/dashboard/events/edit.blade.php",
+            "./resources/views/dashboard/events/index.blade.php",
+            "./resources/views/dashboard/events/show.blade.php",
+            "./resources/views/dashboard/blogs/create.blade.php",
+            "./resources/views/dashboard/blogs/edit.blade.php",
+            "./resources/views/dashboard/blogs/index.blade.php",
+            "./resources/views/dashboard/blogs/show.blade.php",
+            "./resources/views/dashboard/includes/contact.blade.php",
+            "./resources/views/dashboard/includes/nav.blade.php",
+            "./resources/views/dashboard/includes/register.blade.php",
+            "./resources/views/dashboard/leads/index.blade.php",
+            "./resources/views/dashboard/leads/show.blade.php",
+            "./resources/views/events/index.blade.php",
+            "./resources/views/events/show.blade.php",
+            "./resources/views/layouts/app.blade.php",
+            "./resources/views/layouts/home.blade.php",
+            "./resources/views/home.blade.php",
+        ],
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
         screens: {

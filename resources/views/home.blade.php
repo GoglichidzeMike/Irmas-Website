@@ -7,18 +7,16 @@
   <div class="w-95  sm:w-10/12 lg:w-8/12 md:mb-20 xl:mb-0 md:flex justify-between mx-auto">
     <div class="flex flex-col justify-center w-full md:w-7/12  mx-auto md:pr-8">
       <h1 class="text-2xl sm:text-4xl text-primary font-medium mt-6 uppercase">მთავარი სათაური <span class="text-secondary">იქნება</span> სიტყვა აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
-      
       <p class="text-primary my-6 sm:my-14">
         შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
       </p>
-      
       <div class="mx-auto md:m-0">
         <a href="#contact" class="btn bg-primary text-white mr-2 sm:mr-6">კონტაქტი</a>
         <a href="{{ route('about') }}" class="btn hover:text-white text-primary">ჩვენ შესახებ</a>
       </div>
     </div>
     <div class="w-full md:w-5/12">
-      <img src="/image/hero_irma.svg" class="max-w-300 mx-auto my-4 lg:max-w-md rounded-lg md:m-4 shadow-lg" alt="Irma">
+      <img src="/image/hero_irma.jpg" class="max-w-300 mx-auto my-4 lg:max-w-md rounded-lg md:m-4 shadow-lg" alt="Irma">
     </div>
   </div>
 </div>

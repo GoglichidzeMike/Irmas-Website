@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full bg-gray-100">
+<div class="w-full">
   <div class="w-95 md:w-10/12 xl:w-8/12 mx-auto md:flex py-10 md:py-20">
     <div class="w-full md:w-6/12 flex flex-col justify-center mr-6">
       <p class="text-secondary text-sm ml-1">გამარჯობა, მე ვარ</p>
