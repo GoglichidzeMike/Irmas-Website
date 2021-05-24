@@ -20,11 +20,11 @@
       </div>
       <div class="flex my-3">
         <img src="/image/contact/contact_fb.svg" alt="Smartphone Icon" class="w-6">
-        <a href="https://fb.me/irma.kvachadze.psy" rel="nofollow" target="_blank"><p class="text-primary ml-4">Psychology Today</p></a>
+        <a href="https://fb.me/irma.kvachadze.psy" rel="nofollow noreferrer" target="_blank"><p class="text-primary ml-4">Psychology Today</p></a>
       </div>
       <div class="flex my-3">
         <img src="/image/contact/contact_inst.svg" alt="Smartphone Icon" class="w-6">
-        <a href="https://www.instagram.com/mushki/" rel="nofllow" target="_blank"><p class="text-primary ml-4">instagram.com/mushki</p></a>
+        <a href="https://www.instagram.com/mushki/" rel="nofllow noreferrer" target="_blank"><p class="text-primary ml-4">instagram.com/mushki</p></a>
       </div>
     </div>
     <form action="{{ route('contact') }}" method="post" enctype="multipart/form-data" class="w-full lg:w-9/12 md:flex gap-x-10">

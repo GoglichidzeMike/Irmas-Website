@@ -21,8 +21,8 @@ module.exports = {
 
         extend: {
             backgroundImage: (theme) => ({
-                "blogs-index": "url('/image/blogs-bg.svg')",
-                "events-index": "url('/image/events-bg.svg')",
+                "blogs-index": "url('/image/blogs-bg.jpg')",
+                "events-index": "url('/image/events-bg.jpg')",
             }),
             colors: {
                 primary: "#105650",

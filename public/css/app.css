@@ -4350,11 +4350,11 @@ video {
 }
 
 .bg-blogs-index {
-  background-image: url('/image/blogs-bg.svg');
+  background-image: url('/image/blogs-bg.jpg');
 }
 
 .bg-events-index {
-  background-image: url('/image/events-bg.svg');
+  background-image: url('/image/events-bg.jpg');
 }
 
 .from-transparent {
@@ -33049,14 +33049,8 @@ video {
   font-weight: 400;
 
   src: local("Firago"), url(/fonts/firago-regular.woff2?35d36e245ee1de4271b55e85856206ba) format("woff2");
-}
 
-@font-face {
-  font-family: "firago";
-
-  font-weight: 300;
-
-  src: local("Firago"), url(/fonts/firago-light.woff2?12db99a780c2211b37d4382724536e37) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -33065,6 +33059,8 @@ video {
   font-weight: 500;
 
   src: local("Firago"), url(/fonts/firago-medium.woff2?0941aa7e2ebe89780687975125e6fc2e) format("woff2");
+
+  font-display: swap;
 }
 
 @font-face {
@@ -33073,6 +33069,8 @@ video {
   font-weight: 700;
 
   src: local("Firago"), url(/fonts/firago-bold.woff2?88f7df7862a1f646325a09d2648e4c24) format("woff2");
+
+  font-display: swap;
 }
 
 @media (min-width: 640px) {
@@ -36875,11 +36873,11 @@ video {
   }
 
   .sm\:bg-blogs-index {
-    background-image: url('/image/blogs-bg.svg');
+    background-image: url('/image/blogs-bg.jpg');
   }
 
   .sm\:bg-events-index {
-    background-image: url('/image/events-bg.svg');
+    background-image: url('/image/events-bg.jpg');
   }
 
   .sm\:from-transparent {
@@ -68730,11 +68728,11 @@ video {
   }
 
   .md\:bg-blogs-index {
-    background-image: url('/image/blogs-bg.svg');
+    background-image: url('/image/blogs-bg.jpg');
   }
 
   .md\:bg-events-index {
-    background-image: url('/image/events-bg.svg');
+    background-image: url('/image/events-bg.jpg');
   }
 
   .md\:from-transparent {
@@ -100585,11 +100583,11 @@ video {
   }
 
   .lg\:bg-blogs-index {
-    background-image: url('/image/blogs-bg.svg');
+    background-image: url('/image/blogs-bg.jpg');
   }
 
   .lg\:bg-events-index {
-    background-image: url('/image/events-bg.svg');
+    background-image: url('/image/events-bg.jpg');
   }
 
   .lg\:from-transparent {
@@ -132440,11 +132438,11 @@ video {
   }
 
   .xl\:bg-blogs-index {
-    background-image: url('/image/blogs-bg.svg');
+    background-image: url('/image/blogs-bg.jpg');
   }
 
   .xl\:bg-events-index {
-    background-image: url('/image/events-bg.svg');
+    background-image: url('/image/events-bg.jpg');
   }
 
   .xl\:from-transparent {
@@ -164295,11 +164293,11 @@ video {
   }
 
   .\32xl\:bg-blogs-index {
-    background-image: url('/image/blogs-bg.svg');
+    background-image: url('/image/blogs-bg.jpg');
   }
 
   .\32xl\:bg-events-index {
-    background-image: url('/image/events-bg.svg');
+    background-image: url('/image/events-bg.jpg');
   }
 
   .\32xl\:from-transparent {

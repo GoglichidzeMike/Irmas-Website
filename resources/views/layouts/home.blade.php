@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="ფსიქოლოგია ყოველდღიურ ცხოვრებაში. კლინიკური ფსიქოლოგი ირმა კვაჭაძე" />
+
+  <meta property="og:site_name"          content="Psychotherapy.ge ფსიქოლოგია ყოველდღიურ ცხოვრებაში" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="{{ $title }}" />
+  <meta property="og:locale"             content="ka_GE" />
+  <meta property="og:description"        content="ფსიქოლოგია ყოველდღიურ ცხოვრებაში. კლინიკური ფსიქოლოგი ირმა კვაჭაძე" />
+  <meta property="og:image"              content="@isset($image) {{ $image }} @endisset" />
+  
   <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
+
   <script src="/js/app.js" defer></script>
   <script src="/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" rel="preload" as="script"></script>
+
   <title>{{ $title }}</title>
 </head>
+
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
   <div class="nav w-full z-10 md:h-auto  overflow-hidden">
@@ -76,7 +88,7 @@
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
           <li>
-            <a href="https://goglichidze.me" target="_blank" rel="nofollow" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out">&copy; Mikael</a>  
+            <a href="https://goglichidze.me" target="_blank" rel="nofollow noreferrer" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out">&copy; Mikael</a>  
           </li>
         </div>
       </ul>

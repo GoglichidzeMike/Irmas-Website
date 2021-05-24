@@ -7,7 +7,6 @@
   \*****************************/
 /***/ (() => {
 
-// require("./bootstrap");
 var navSlide = function navSlide() {
   var burger = document.querySelector(".burger");
   var nav = document.querySelector(".nav");

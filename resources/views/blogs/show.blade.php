@@ -55,9 +55,4 @@
     z-index: 10;
   }
 </style>
-
-{{-- <a href="{{ route('public_blogs.show' , $blog->slug) }}" data-image="article-1.jpg" data-title="Article Title" data-desc="Some description for this article" class="btnShare">Share</a> --}}
-
-
-
 @endsection
