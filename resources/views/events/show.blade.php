@@ -32,11 +32,14 @@
             </div>
         @endif
         <div class="text-dark relative">
-          <div class="absolute hidden md:flex flex-col items-center -ml-12 h-2.5" id="fixed">
-            <p class="uppercase text-xs font-medium">Share</p>
-            <img src="/image/about/fb-share.svg" alt="Fb share" class="w-8 mb-2">
-            <img src="/image/about/link-share.svg" alt="Fb share" class="w-8">
-          </div>
+        <div class="absolute md:flex flex-col items-center -ml-12 h-2.5 hidden" id="fixed"> <p class="uppercase text-xs font-medium">Share</p>
+          <a href="{{ route('public_event.show' , $event->slug) }}" data-image="article-1.jpg" data-title="Article Title" data-desc="Some description for this article" class="btnShare">
+            <img src="/image/about/fb-share.svg" alt="Fb share" class="w-8 h-8 mb-2">
+          </a>
+          <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ route('public_event.show' , $event->slug) }}" target="popup" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{ route('public_event.show' , $event->slug) }}','name','width=600,height=400')" >
+            <img src="/image/about/link-share.svg" alt="Fb share" class="w-8 h-8">
+          </a>
+        </div>
           {!! $event->body !!}
         </div>
 
@@ -70,26 +73,6 @@
   </div>
 </div>
 
-
-<script>
-
-  $(document).ready(function() {
-    // Get the current top location of the nav bar.
-    var stickyNavTop = $('#fixed').offset().top;
-  
-    // Set the header's height to its current height in CSS
-    // If we don't do this, the content will jump suddenly when passing through stickyNavTop.
-    $('header').height($('header').height());
-  
-    $(window).scroll(function(){
-        if ($(window).scrollTop() >= stickyNavTop) {
-            $('#fixed').addClass('fixed-header');
-        } else {
-            $('#fixed').removeClass('fixed-header');
-        }
-    });
-  });
-</script>
 
 <style>
   .fixed-header {

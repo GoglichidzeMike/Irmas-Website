@@ -13,7 +13,10 @@ class HomeController extends Controller
     {
 
         $latest = Blog::orderBy('created_at', 'desc')->take(3)->get(); 
-        return view('home', [ 'latest'=> $latest, 'title' => 'მთავარი - ფსიქოლოგია დღეს' ]);
+        return view('home', [
+            'latest'=> $latest,
+            'title' => 'მთავარი - ფსიქოლოგია დღეს'
+            ]);
     }
 
     public function blogs_index()
@@ -24,7 +27,7 @@ class HomeController extends Controller
             'blogs' => $blogs,
             'title' => 'სტატიები - ფსიქოლოგია დღეს'
             ]);
-        }
+    }
         
     public function blogs_show($slug)
     {
@@ -33,7 +36,8 @@ class HomeController extends Controller
         return view('blogs.show',[
             'blog' => $blog,
             'latest'=>$latest,
-            'title' => $blog->name.' - ფსიქოლოგია დღეს'
+            'title' => $blog->name.' - ფსიქოლოგია დღეს',
+            'image' => "https://psychotherapy.ge/uploads/image/".$blog->image
         ]);
     }
 
@@ -57,7 +61,8 @@ class HomeController extends Controller
         return view('events.show',[
             'event' => $event,
             'latest' => $latest,
-            'title' => $event->name.' - ფსიქოლოგია დღეს'
+            'title' => $event->name.' - ფსიქოლოგია დღეს',
+            'image' => "https://psychotherapy.ge/uploads/image/".$event->image
         ]);
     }
 

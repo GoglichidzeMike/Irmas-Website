@@ -40,11 +40,14 @@
   <meta name="description" content="ფსიქოლოგია ყოველდღიურ ცხოვრებაში. კლინიკური ფსიქოლოგი ირმა კვაჭაძე" />
   
   <meta property="og:site_name"          content="Psychotherapy.ge ფსიქოლოგია ყოველდღიურ ცხოვრებაში" />
+  <meta property="og:url"                contnet="<?php echo url()->current() ?>">
   <meta property="og:type"               content="website" />
   <meta property="og:title"              content="{{ $title }}" />
   <meta property="og:locale"             content="ka_GE" />
   <meta property="og:description"        content="ფსიქოლოგია ყოველდღიურ ცხოვრებაში. კლინიკური ფსიქოლოგი ირმა კვაჭაძე" />
-  <meta property="og:image"              content="@isset($image) {{ $image }} @endisset" />
+  @isset($image) <meta property="og:image"              content="{{ $image }}" />@endisset
+  @empty($image) <meta property="og:image"              content="https://psychotherapy.ge/image/fb-share.jpg" />@endempty
+  
   
   <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
 

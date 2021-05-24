@@ -68,7 +68,7 @@ class BlogsController extends Controller
         $blog = Blog::where('slug', '=', $slug)->firstOrFail();
 
         return view('dashboard.blogs.show',[
-            'blog' => $blog
+            'blog' => $blog,
         ]);
     }
 
