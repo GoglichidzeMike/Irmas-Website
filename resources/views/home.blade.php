@@ -6,9 +6,11 @@
 <div class="w-full z-10">
   <div class="w-95  sm:w-10/12 lg:w-8/12 md:mb-20 xl:mb-0 md:flex justify-between mx-auto">
     <div class="flex flex-col justify-center w-full md:w-7/12  mx-auto md:pr-8">
-      <h1 class="text-2xl sm:text-4xl text-primary font-medium mt-6 uppercase">მთავარი სათაური <span class="text-secondary">იქნება</span> სიტყვა აქ კიდე რაღაც ტექსტები <span class="text-secondary">ფსიქოლოგია</span> და რამე</h1>
+      <h1 class="text-2xl sm:text-4xl text-primary font-medium mt-6 uppercase">
+        Ფსიქოთერაპიული სივრცე <span class="text-secondary">ლაღი, ბედნიერი და ჰარმონიული</span> ცხოვრებისთვის
+      </h1>
       <p class="text-primary my-6 sm:my-14">
-        შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
+        Მიიღე მხარდაჭერა და გაეცანი სანდო ინფორმაციას დარგის წამყვანი ფსიქოლოგების, ფსიქოთერაპევტებისა და ქოუჩებისგან 
       </p>
       <div class="mx-auto md:m-0">
         <a href="#contact" class="btn bg-primary text-white mr-2 sm:mr-6">კონტაქტი</a>
@@ -23,8 +25,7 @@
 <div class="w-full bg-primary py-20">
   <div class="w-95 md:w-10/12 lg:w-8/12 m-auto md:flex items-center">
     <h2 class="text-xl md:text-3xl text-white w-95 md:w-8/12 uppercase mx-auto md:m-0">
-      მე შემიძლია <span class="text-secondary">თერაპიაში</span> და შემდეგ <span class="text-secondary">საკითხებში</span> დაგეხმარო
-      და ეს მხოლოდ <span class="text-secondary">ზოგიერთი რამეა</span> რაშიც შეგვიძლია მუშაობა.
+      <span class="text-secondary">Სავსე ცხოვრების ალგორითმი - შინაგანი რესურსების აქტივაცია და ჯანსაღი კომუნიკაცია სამყროსთან</span>
     </h2>
     <div class="illu">
       <img src="/image/illu.png" alt="Psychology Illustration" class="max-w-300 md:w-80 mt-6 mx-auto md:m-0">
@@ -33,20 +34,20 @@
 
   <div class="mx-auto w-95 md:w-10/12 lg:w-8/12 flex flex-col md:flex-row justify-between items-center md:items-start my-10">
     <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
-      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">შფოთვა</p>
-      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">Მე კონცეფცია</p>
+      <p class="text-gray-100 text-sm">გაიცანი საკუთარი თავი და შექმენი მისი საუკეთესო ვერსია</p>
     </div>
     <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
-      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">ფობია მეორე</p>
-      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">Მოთხოვნილება და მიზანი</p>
+      <p class="text-gray-100 text-sm">მიაღწიე მიზანს მარტივად</p>
     </div>
     <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
-      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დეპრესია</p>
-      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">ტრანსფორმაცია</p>
+      <p class="text-gray-100 text-sm">განთავისუფლდი წარსულს ნეგატივისგან უკეთესი მომავლისთვის</p>
     </div>
     <div class="flex flex-col w-72 text-center md:text-left my-6 md:m-0">
-      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">დამოკიდებულება</p>
-      <p class="text-gray-100 text-sm">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის</p>
+      <p class="text-gray-100 text-lg mb-2 font-medium uppercase ">Კომუნიკაცია</p>
+      <p class="text-gray-100 text-sm">დაამყარე ჯანსაღი კომუნიკაცია მშობლებთან, პარტნიორთან და შვილებთან</p>
     </div>
   </div>
 </div>
@@ -58,37 +59,37 @@
     </div>
     
     <div class="w-95 lg:w-7/12 mx-auto lg:mx-0">
-      <h2 class="text-2xl md:text-3xl text-center lg:text-left text-dark font-medium my-6 uppercase">ჩემი <span class="text-secondary">სერვისები</span></h2>
+      <h2 class="text-2xl md:text-3xl text-center lg:text-left text-dark font-medium my-6 uppercase">Მხარდაჭერის <span class="text-secondary">ფორმები</span></h2>
       <p class="mx-auto lg:mx-0 text-sm sm:text-base w-11/12 text-third mb-6">
-        შემთხვევითად გენერირებული ტექსტი <span class="text-dark">ეხმარება დიზაინერებს</span> და ტიპოგრაფიული ნაწარმის შემქმნელებს, <span class="text-dark"> რეალურთან მაქსიმალურად </span>მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა
+        Შენ შეგიძლია აირჩიო შენთვის ხელსაყრელი <span class="text-dark">მხარდაჭერის ფორმა</span>
       </p>
       <div class="card-container flex flex-col space-y-6">
         <div class="card">
           <img src="/image/head-2.svg" alt="Brain Illustration" class="w-16 sm:w-24 sm:ml-4 h-auto">
           <div class="div">
-            <p class="text-primary font-medium text-md mb-4">ფსიქოთერაფია & ფსიქოლოგია</p>
-            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს</p>
+            <p class="text-primary font-medium text-md mb-4">ინდივიდუალური ფსიქოთერაპია</p>
+            <p class="text-sm text-third">მიიღე მხარდაჭერა ფსიქოთერაპიის/ქოუჩინგის ფორმატში სასურველი რეზულტატის მისაღებად</p>
           </div>
         </div>
         <div class="card">
           <img src="/image/brain-1.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
-            <p class="text-primary font-medium text-md mb-4">ფსიქოგანათლება</p>
-            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად </p>
+            <p class="text-primary font-medium text-md mb-4">ოჯახური კონსულტაცია</p>
+            <p class="text-sm text-third">მიაღწიე ჰარმონიულ ურთიერთობებს და დაამყარე ჯანსაღი კონტაქტი<p>
           </div>
         </div>
         <div class="card">
           <img src="/image/head-1.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
-            <p class="text-primary font-medium text-md mb-4">ფიზიკური რაღაცა</p>
-            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს</p>
+            <p class="text-primary font-medium text-md mb-4">თემატური მარათონები</p>
+            <p class="text-sm text-third">Ჩაერთე შენთვის საინტერესო მარათონში და გახადე თქვითშემეცნების პროცესი სასიამოვნო</p>
           </div>
         </div>
         <div class="card">
           <img src="/image/brain-2.svg" alt="Brain Illustration" class="w-16 sm:w-24 h-auto">
           <div class="div">
-            <p class="text-primary font-medium text-md mb-4">სავარძელზე წამოწოლა</p>
-            <p class="text-sm text-third">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს</p>
+            <p class="text-primary font-medium text-md mb-4">სასერტიფიკაციო სასწავლო ტრენინგები</p>
+            <p class="text-sm text-third">შეისწავლე ფსიქოლოგიის უახლესი მიმართულებები როგორც ქართველ ასევე საერთაშორისო სპეციალისტებთან</p>
           </div>
         </div>
       </div>
@@ -129,7 +130,7 @@
 <p>There are no blogs</p>    
 @endif
 
-<div class="partners bg-gray-100 relative">
+<div class="partners bg-gray-100 relative hidden">
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute top-2 left-0 hidden xl:block">
   <img src="/image/dots-bg.svg" alt="Pixels background" class="absolute bottom-2 right-0 hidden xl:block">
   <div class="w-95 md:w-10/12 lg:w-8/12 mx-auto text-center mt-20 mb-28">

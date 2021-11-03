@@ -45,7 +45,7 @@ class LeadController extends Controller
              'message'=> $request->message,
              'phone'=> $request->phone,
              'email'=> $request->email,
-             'referrer'=> $request->referrer
+             'referrer'=> $request->referrer,
             ]
         );
 

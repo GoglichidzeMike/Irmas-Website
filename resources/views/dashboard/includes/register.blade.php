@@ -20,6 +20,8 @@
           <input type="email" name="email" id="email" autocomplete="off" placeholder="თქვენი e-mail" class="input" value="{{ old('email') }}"  @error('email') border-red-500 @enderror>
           <label for="phone" class="text-primary block font-light mb-1">ტელეფონი</label>
           <input type="text" name="phone" id="phone" autocomplete="off" placeholder="თქვენი ტელეფონის ნომერი" class="input" value="{{ old('phone') }}" @error('phone') border-red-500 @enderror>
+          <label for="message" class="text-primary block font-light mb-1">დამატებითი ინფორმაცია</label>
+          <input type="text" name="message" id="message" autocomplete="off" placeholder="დამატებითი ინფორმაცია" class="input" value="{{ old('message') }}" @error('extraInfo') border-red-500 @enderror>
         </div>
 
         <label  class="hidden" for="referrer"></label>

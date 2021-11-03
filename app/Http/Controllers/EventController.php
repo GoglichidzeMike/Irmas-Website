@@ -36,7 +36,7 @@ class EventController extends Controller
             'body'=> 'required',
             'name'=> 'required',
             'slug'=> 'required|unique:events',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5000',
         ]);
 
         //get image, set destination path, change image name to current time in secs and save it.

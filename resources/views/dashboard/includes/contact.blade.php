@@ -1,7 +1,7 @@
 <div class="w-full py-20" id="contact">
   <h3 class="text-2xl md:text-3xl font-medium text-primary text-center mb-4 uppercase">დაგვიკავშირდით</h3>
-  <p class="text-secondary text-center">აქედან შეგიძლიათ ჩვენთან დაკავშირება თუ გსურთ ჩაწერა</p>
-  <p class="text-secondary text-center">რაღაცა ან უბრალოდ გასაუბრება</p>
+  <p class="text-secondary text-center">ინდივიდუალური სესიის ჩასანიშნად ან თანამშრომლობისთვის</p>
+  <p class="text-secondary text-center">დაგვიტოვეთ საკონტაქტო ინფორმაცია</p>
       @if (session('status'))
         <div class="text-center animate-pulse text-primary font-medium my-4">
             {{ session('status') }} 

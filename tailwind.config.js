@@ -1,6 +1,6 @@
 module.exports = {
     purge: {
-        enabled: true,
+        enabled: false,
         content: [
             "./resources/css.app.css",
             "./resources/js/app.js",

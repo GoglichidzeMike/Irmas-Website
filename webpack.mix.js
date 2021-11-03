@@ -49,3 +49,4 @@ mix.copy(
     "node_modules/tinymce/tinymce.min.js",
     "public/node_modules/tinymce/tinymce.min.js"
 );
+mix.browserSync("127.0.0.1:8000");
