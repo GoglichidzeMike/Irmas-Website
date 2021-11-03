@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Lead;
 use App\Models\Event;
+use Mail;
 
 class LeadController extends Controller
 {
@@ -48,6 +49,11 @@ class LeadController extends Controller
              'referrer'=> $request->referrer,
             ]
         );
+        Mail::raw('New Lead. Please check your dashboard, https://psychotherapy.ge/dashboard', function ($message) {
+        $message
+            ->to('goglichidzemariam@gmail.com')
+            ->subject('New lead on Psychotherapy');
+        });
 
         return redirect(url()->previous().'#contact')->with('status', 'თქვენი შეტყობინება წარმატებით გაიგზავნა!');
     }
