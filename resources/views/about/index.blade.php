@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="w-full md:w-6/12 md:flex justify-center mt-10 md:m-0 hidden">
-      <img src="/image/irma-about.jpg" class="max-w-sm xl:max-w-md rounded-md shadow-lg" alt="Irma">
+      <img src="/image/irma-new-2.jpg" class="max-w-sm xl:max-w-md rounded-md shadow-lg" alt="Irma">
     </div>
   </div>
 </div>

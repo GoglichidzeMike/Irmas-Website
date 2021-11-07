@@ -12,11 +12,11 @@
       <p class="text-primary font-primary font-medium text-center">კონტაქტის ფორმები</p>
       <div class="flex my-3">
         <img src="/image/contact/smartphone.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">+995 579 900 900</p>
+        <p class="text-primary ml-4">+995 598 400 841</p>
       </div>
       <div class="flex my-3">
         <img src="/image/contact/mail.svg" alt="Smartphone Icon" class="w-6">
-        <p class="text-primary ml-4">irma@irmaswebsite.ge</p>
+        <p class="text-primary ml-4">irma@psychotherapy.ge</p>
       </div>
       <div class="flex my-3">
         <img src="/image/contact/contact_fb.svg" alt="Smartphone Icon" class="w-6">

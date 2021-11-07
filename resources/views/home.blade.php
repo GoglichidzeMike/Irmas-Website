@@ -55,7 +55,7 @@
 <div class="w-full bg-gray-100 pb-20">
   <div class="w-95 md:w-8/10 lg:w-8/12 mx-auto lg:flex justify-between">
     <div class="w-10/12 mx-auto lg:mx-0 md:w-4/12 -mt-20">
-      <img src="/image/irma-second.jpg" alt="Irma" class="rounded-lg shadow-md">
+      <img src="/image/irma-new-1.jpg" alt="Irma" class="rounded-lg shadow-md">
     </div>
     
     <div class="w-95 lg:w-7/12 mx-auto lg:mx-0">
