@@ -48,6 +48,6 @@ class UsersExport implements FromCollection, WithColumnFormatting, WithMapping, 
 
     public function collection()
     {
-        return Lead::all();
+        return Lead::all()->sortByDesc('created_at');
     }
 }
